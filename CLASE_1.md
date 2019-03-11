@@ -7,11 +7,35 @@ propio de la dirección de proyectos.
 
 ### ¿Qué es un proyecto?
 
-PMBOK 1.2, Heldman Cap 1
+Un proyecto es un esfuerzo **temporal** que se lleva a cabo para obtener un
+resultado. Es temporal porque tiene fechas de inicio y fin determinadas. Que
+sea temporal no quiere decir que sea muy acotado en el tiempo, un proyecto
+puede durar dos semanas o cinco años. El final de un proyecto se alcanza cuando
+se logran los **objetivos** y **metas** del proyecto. Pero también puede decidir
+terminar antes el proyecto porque sus metas no pueden ser alcanzadas o porque
+la necesidad que dió origen al proyecto ya no existe. El resultado de un
+proyecto puede ser un producto nuevo, un servicio, un documento de
+investigación, etc. Es importante destacar que el resultado del proyecto es
+**único**. Pongamos un ejemplo: un proyecto puede tener como meta construir una
+casa. Los planos de la casa pueden no ser únicos, el mismo diseño puede
+construirse en distintos lotes. Pero la totalidad del proyecto: construir una
+casa en tal lote determinado es único.
+
+Por supuesto, en esta asignatura nos interesan los proyectos del campo de la
+informática. Ejemplos de proyectos de nuestro campo de conocimiento pueden ser:
+una aplicación, un sitio web, un sistema de control, el diseño y especificación
+de un lenguaje de programación, etc.
+
+Un proyecto puede involucrar a una persona o a toda una **organización**. Por
+organización entendemos una empresa, una escuela, una ONG, etc. Generalmente los
+proyectos se llevan a cabo dentro de una organización para agregar algo nuevo
+que responde a una **necesidad** propia de la organización o al pedido de un
+cliente o usuario.
 
 ### Diferencias entre proyectos y operaciones
 
-Heldman Cap 1
+Las operaciones son actividades **repetitivas** y sin un final en el tiempo
+determinado dentro de una organización. 
 
 ### Interesados
 
