@@ -37,7 +37,7 @@ PMBOK 1.7, Heldman Cap 1
 
 PMBOK 2.4, Heldman Cap 1
 
-### Fases del proyectos
+### Fases del proyecto
 
 PMBOK 2.4.2, Heldman Cap 1
 
@@ -63,20 +63,22 @@ PMBOK 3.9, Tabla 3-1, Heldman Cap 1
 
 ## Feria de ciencias
 
-Charla...
+Completar...
 
 ## Cuestionario
 
 1. ¿Qué es un proyecto?
 2. Contrastar los conceptos de proyecto y operaciones. Marcar las diferencias
 entre ambos.
-3. ¿Quiénes son los interesados en un proyecto?
+3. ¿Quiénes son los interesados en un proyecto? ¿Qué tipos de interesados hay
+en un proyecto?
 4. ¿Qué es la dirección de proyectos?
 5. ¿Qué es el PMI y el estándar que define?
 6. ¿Qué es el ciclo de vida de un proyecto?
 7. ¿Qué tipos de ciclo de vida existen según el PMBOK?
 8. Diferenciar los procesos orientados a la dirección de proyectos de los
-procesos propios de la realización del proyecto.
+procesos propios de la realización del proyecto. Dar un ejemplo, en lo posible
+dentro del campo de la informática.
 9. Explicar brevemente los grupos de procesos del estándar del PMI.
 10. ¿Qué son las áreas de conocimiento que plantea el estándar del PMI?
 
@@ -87,4 +89,6 @@ procesos propios de la realización del proyecto.
 * Heldman, K. (2013). PMP: Project Management Professional Exam Study Guide.
 Sybex. (En inglés).
 * Wikipedia contributors. "Project management." Wikipedia, The Free
-Encyclopedia. Wikipedia, The Free Encyclopedia. (En inglés).
+Encyclopedia. (En inglés).
+* Wikipedia contributors. "Waterfall model." Wikipedia, The Free Encyclopedia.
+(En inglés).
