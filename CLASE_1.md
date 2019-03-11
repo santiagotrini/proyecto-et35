@@ -35,11 +35,29 @@ cliente o usuario.
 ### Diferencias entre proyectos y operaciones
 
 Las operaciones son actividades **repetitivas** y sin un final en el tiempo
-determinado dentro de una organización. 
+determinado dentro de una organización. Las operaciones son las actividades
+regulares dentro de una organización. Contrastan de manera clara con los
+proyectos ya que:
+* Las operaciones no tienen límites definidos en el tiempo.
+* Las operaciones no producen resultados únicos. Siempre producen el mismo
+resultado.
+* Las operaciones no generan cambios en la organización.
+
+Un ejemplo de la diferencia entre operaciones y proyectos en una empresa de
+informática podría ser el siguiente. Un cliente encarga a una compañía de
+desarrollo web un nuevo sitio para vender sus productos. La concepción, diseño
+e implementación del sitio es un nuevo proyecto. Es entregado en una fecha
+determinada con el cliente con un contenido previamente acordado. El cliente
+luego necesita realizar ajustes u obtener soporte técnico de esta compañía para
+su sitio. El soporte brindado es parte de las operaciones de la empresa.
+
 
 ### Interesados
 
-PMBOK 2.2, Heldman Cap 1
+Los interesados de un proyecto son todos los miembros del equipo del proyecto y
+todas las personas u organizaciones que se pueden ver afectados por una
+actividad, decisión o resultado del proyecto. Los interesados pueden ser
+afectados de manera positiva o negativa por el proyecto.
 
 ### Equipo del proyecto
 
@@ -47,7 +65,11 @@ PMBOK 2.3, Heldman Cap 1
 
 ## Dirección de proyectos
 
-PMBOK 1.3, Heldman Cap 1
+La dirección de proyectos es la aplicación de conocimientos, habilidades,
+herramientas y técnicas a las actividades del proyecto para llevarlo a cabo de
+manera exitosa. Generalmente hay un responsable del proyecto, el director del
+mismo que responde a la organización y a los interesados del proyecto por el
+desarrollo del mismo.
 
 ### Estándares para la dirección de proyectos
 
@@ -79,11 +101,28 @@ PMBOK 3, Heldman Cap 1
 
 ### Grupos de procesos
 
-PMBOK 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, Heldman Cap 1
+En el PMBOK se detallan cinco grupos de procesos en relación a su lugar en el
+ciclo de vida del proyecto. Éstos son:
+* Grupo de procesos de **Inicio**
+* Grupo de procesos de **Planificación**
+* Grupo de procesos de **Ejecución**
+* Grupo de procesos de **Monitoreo y Control**
+* Grupo de procesos de **Cierre**
 
 ### Áreas de conocimiento
 
-PMBOK 3.9, Tabla 3-1, Heldman Cap 1
+Los 47 procesos definidos en el PMBOK a su vez están organizados en diez áreas
+de conocimiento:
+* **Gestión de la Integración del Proyecto**
+* **Gestión del Alcance del Proyecto**
+* **Gestión del Tiempo del Proyecto**
+* **Gestión de los Costos del Proyecto**
+* **Gestión de la Calidad del Proyecto**
+* **Gestión de los Recursos Humanos del Proyecto**
+* **Gestión de las Comunicaciones del Proyecto**
+* **Gestión de los Riesgos del Proyecto**
+* **Gestión de las Adquisiciones del Proyecto**
+* **Gestión de los Interesados del Proyecto**
 
 ## Feria de ciencias
 
