@@ -1,39 +1,39 @@
-## Unidad 1 - Clase 1
+# Unidad 1 - Clase 1
 
-### Definiciones
+## Definiciones
 
-#### ¿Qué es un proyecto?
+### ¿Qué es un proyecto?
 
-#### Diferencias entre proyectos y operaciones
+### Diferencias entre proyectos y operaciones
 
-#### Interesados
+### Interesados
 
-#### Equipo del proyecto
+### Equipo del proyecto
 
-### Dirección de proyectos
+## Dirección de proyectos
 
-#### Estándares para la dirección de proyectos
+### Estándares para la dirección de proyectos
 
-#### Habilidades para la dirección de proyectos
+### Habilidades para la dirección de proyectos
 
-### Ciclo de vida de un proyecto
+## Ciclo de vida de un proyecto
 
-#### Fases del proyectos
+### Fases del proyectos
 
-#### Ciclos de vida predictivos
+### Ciclos de vida predictivos
 
-#### Ciclos de vida iterativos
+### Ciclos de vida iterativos
 
-### Procesos de la dirección de proyectos
+## Procesos de la dirección de proyectos
 
-#### Grupos de procesos
+### Grupos de procesos
 
-#### Áreas de conocimiento
+### Áreas de conocimiento
 
 
-### Feria de ciencias
+## Feria de ciencias
 
-### Cuestionario
+## Cuestionario
 
 1. ¿Qué es un proyecto?
 2. ¿Qué es el PMI y el estándar que define?
