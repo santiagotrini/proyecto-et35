@@ -82,7 +82,9 @@ cuenta las expectativas de este grupo para garantizar su satisfacción.
 insumos o trabajo requerido para finalizar el proyecto. Son externas a la
 organización que lleva a cabo el proyecto.
 
-### Equipo del proyecto[1]
+### Equipo del proyecto
+
+_Veáse PMBOK 2.3_
 
 El equipo del proyecto son todas las personas que trabajan para lograr el
 objetivo del proyecto. La cantidad de miembros y su organización interna varía
@@ -206,5 +208,3 @@ Sybex. (En inglés).
 Encyclopedia. (En inglés).
 * Wikipedia contributors. "Waterfall model." Wikipedia, The Free Encyclopedia.
 (En inglés).
-
-[1]: PMBOK 2.3
