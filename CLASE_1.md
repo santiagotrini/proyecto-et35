@@ -160,6 +160,8 @@ deben ser autorizados por fuera del equipo del proyecto.
 
 ## Ciclo de vida de un proyecto
 
+_Veáse PMBOK 2.4_
+
 El ciclo de vida de un proyecto son las **fases** que atraviesa el proyecto desde
 su inicio hasta su finalización. El número y el nombre de las fases de un
 proyecto no está escrito en piedra. Dependen del tipo de proyecto que se lleva
@@ -170,6 +172,8 @@ en fases del proyecto provee un marco de referencia mínimo para dirigir y
 controlar el trabajo del mismo.
 
 ### Fases del proyecto
+
+_Veáse PMBOK 2.4.2_
 
 Un proyecto puede contener un número cualquiera de fases. Una fase es una
 agrupación lógica de actividades del proyecto. Una fase debe terminar con algún
@@ -196,9 +200,42 @@ siguiente:
 
 _Véase PMBOK 2.4.2.2_
 
+Los ciclos de vida predictivos se denominan así por estar orientados a la
+planificación. El alcance, el costo y el tiempo del proyecto se determinan lo
+antes posible para poder mantener los cambios futuros al mínimo. Esto se
+realiza así para bajar los costos ya que cualquier cambio que se quiera
+introducir al proyecto tiene un costo mayor mientras más avanzado está el
+desarrollo. Este tipo de ciclo de vida permite también mantener los riesgos
+de fracaso al mínimo posible y formar un equipo del proyecto especializado por
+cada fase del mismo. Generalmente se compone de fases secuenciales o levemente
+superpuestas.
+
+En ingeniería de software tenemos un ejemplo paradigmático de ciclo de vida
+predictivo. El
+[modelo en cascada](https://es.wikipedia.org/wiki/Desarrollo_en_cascada)
+es un método de desarrollo de software de larga tradición y que pone todo su
+esfuerzo en evitar cambios al proyecto durante la fase de implementación
+(código).
+
 ### Ciclos de vida iterativos
 
 _Veáse PMBOK 2.4.2.3_
+
+Los ciclos de vida iterativos e incrementales son aquellos en los cuales, dentro
+de las fases del proyecto (también llamadas iteraciones), se repiten de manera
+intencionada una o más actividades del proyecto a medida que aumenta el
+entendimiento del producto por parte del equipo del proyecto. Las iteraciones
+desarrollan el producto a través de una serie de ciclos repetidos, mientras que
+los incrementos van añadiendo sucesivamente funcionalidad al producto. Estos
+ciclos de vida desarrollan el producto de forma iterativa y con incrementos
+graduales. Los proyectos iterativos e incrementales pueden desarrollarse en
+fases, y las propias iteraciones se realizarán de un modo secuencial o
+superpuesto.
+
+Generalmente este tipo de ciclo de vida se prefiere cuando es probable que el
+alcance del proyecto cambie a lo largo del mismo o cuando se emprende un
+proyecto poco familiar para el equipo del mismo, incorporando las lecciones
+aprendidas durante cada iteración.
 
 ## Procesos de la dirección de proyectos
 
@@ -232,7 +269,13 @@ ciclo de vida del proyecto. Éstos son:
 * Grupo de procesos de **Monitoreo y Control**
 * Grupo de procesos de **Cierre**
 
+Cabe destacar que según el PMBOK estos cinco grupos no son fases dentro del
+ciclo de vida del proyecto. Estos grupos pueden aparecer dentro de cada fase
+del proyecto.
+
 #### Procesos de inicio
+
+_Veáse PMBOK 3.3_
 
 Son los procesos destinados a definir un nuevo proyecto o una nueva fase del
 mismo. Estos procesos se encargan de conseguir el apoyo financiero o de otro
@@ -242,6 +285,8 @@ importantes del proyecto: **alcance**, **costo** y **tiempo**.
 
 #### Procesos de planificación
 
+_Veáse PMBOK 3.4_
+
 Son los procesos donde la dirección del proyecto ejerce su mayor influencia.
 Se elaboran y refinan los objetivos planteados en los procesos de inicio y se
 establecen las **líneas base** para el futuro trabajo del proyecto. Los
@@ -249,6 +294,41 @@ resultados obtenidos forman la base futura para los procesos de monitoreo y
 control sobre el trabajo realizado. La mayoría de las herramientas y técnicas
 de este grupo de procesos son del campo de conocimientos específicos al director
 de proyectos y buscan asegurar el éxito y la satisfacción de los interesados.
+
+#### Procesos de ejecución
+
+_Veáse PMBOK 3.5_
+
+El Grupo de Procesos de Ejecución está compuesto por aquellos procesos
+realizados para completar el trabajo definido en el plan para la dirección del
+proyecto a fin de cumplir con las especificaciones del mismo. Este Grupo de
+Procesos implica coordinar personas y recursos, gestionar las expectativas de
+los interesados, así como integrar y realizar las actividades del proyecto
+conforme al plan para la dirección del proyecto.
+
+#### Procesos de Monitoreo y Control
+
+_Veáse PMBOK 3.6_
+
+En este grupo de procesos la dirección del proyecto realiza la gestión de
+conflictos y dirige el progreso del mismo, resolviendo los problemas que puedan
+surgir durante el desarrollo. Es responsabilidad del director del proyecto
+seguir de cerca la evolución del trabajo para asegurar que se cumplan con las
+fechas establecidas, las restricciones presupuestarias, el alcance definido
+durante la planificación.
+
+#### Procesos de Cierre
+
+_Veáse PMBOK 3.7_
+
+El Grupo de Procesos de Cierre está compuesto por aquellos procesos realizados
+para finalizar todas las actividades a través de todos los Grupos de Procesos
+de la Dirección de Proyectos, a fin de completar formalmente el proyecto, una
+fase del mismo u otras obligaciones contractuales. Este Grupo de Procesos, una
+vez completado, verifica que los procesos definidos se han completado dentro de
+todos los Grupos de Procesos a fin de cerrar el proyecto o una fase del mismo,
+según corresponda, y establece formalmente que el proyecto o fase del mismo ha
+finalizado.
 
 ### Áreas de conocimiento
 
@@ -267,9 +347,10 @@ de conocimiento:
 * **Gestión de las Adquisiciones del Proyecto**
 * **Gestión de los Interesados del Proyecto**
 
-## Feria de ciencias
-
-Completar...
+La división en áreas de conocimiento de los procesos busca separar las distintas
+herramientas y especialidades dentro de la profesión del director de proyectos.
+Los capítulos 4 al 13 del PMBOK describen los procesos específicos de cada área
+y su relevancia dentro de la dirección de proyectos.
 
 ## Cuestionario
 
