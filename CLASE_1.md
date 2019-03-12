@@ -7,6 +7,8 @@ propio de la dirección de proyectos.
 
 ### ¿Qué es un proyecto?
 
+_Veáse PMBOK 1.2_
+
 Un proyecto es un esfuerzo **temporal** que se lleva a cabo para obtener un
 resultado. Es temporal porque tiene fechas de inicio y fin determinadas. Que
 sea temporal no quiere decir que sea muy acotado en el tiempo, un proyecto
@@ -53,6 +55,8 @@ su sitio. El soporte brindado es parte de las operaciones de la empresa.
 
 
 ### Interesados
+
+_Veáse PMBOK 2.2_
 
 Los interesados de un proyecto son todos los miembros del equipo del proyecto y
 todas las personas u organizaciones que se pueden ver afectados por una
@@ -107,11 +111,52 @@ desarrollo del mismo.
 
 ### Estándares para la dirección de proyectos
 
-PMBOK 1.1, 1.3, Heldman Cap 1, IEEE 16326-2009, ISO 21500
+_Veáse PMBOK 1.3_
+
+Existen distintos estándares para la dirección de proyectos, todos muy similares
+entre sí. Entendemos por estándar un conjunto de prácticas recomendadas,
+que los profesionales de la dirección y gestión de proyectos consideran útiles
+a la hora de llevar a cabo sus objetivos de manera satisfactoria. Es un
+documento formal que recomienda y busca normalizar una práctica profesional
+determinada. Estos estándares pueden referirse a la dirección de proyectos en
+general, o a la dirección de proyectos dentro de una rama o industria
+específica.
+Algunos ejemplos son:
+* ISO 21500
+* PMBOK
+* ISO/IEC/IEEE 16326 (para ingeniería de software)
+
+El estándar de referencia que tomamos nosotros es el del PMI (Project
+Management Institute). Sus prácticas están desarrolladas en el PMBOK (Project
+Management Body of Knowledge) y es de hecho el estándar internacional con mayor
+presencia. También es uno de los más generales, por lo tanto intenta ser de
+aplicación a casi cualquier situación.
+
+El estándar descrito en el PMBOK consta básicamente de 47 procesos con sus
+entradas y salidas. Para organizarlos éstos están divididos en diez áreas de
+conocimiento relevantes para la dirección de proyectos. Además se agrupan en
+cinco grupos definidos en relación con el ciclo de vida del proyecto.
+
 
 ### Habilidades para la dirección de proyectos
 
-PMBOK 1.7, Heldman Cap 1
+_Veáse PMBOK 1.7_
+
+El director del proyecto tiene la tarea de satisfacer las necesidades del equipo
+del proyecto, de las actividades que este lleva a cabo, de los interesados, etc.
+Algunas habilidades con las que debería contar un director de proyectos:
+* Liderazgo
+* Trabajo en equipo
+* Comunicación
+* Motivación
+* Toma de decisiones
+* Orientación
+* Negociación y gestión de conflictos
+
+También es responsabilidad del director del proyecto la planificación del mismo.
+Las dos habilidades más importantes para esto son las de manejar los tiempos y
+costos del proyecto, ya que cualquier cambio de estos dos factores en general
+deben ser autorizados por fuera del equipo del proyecto.
 
 ## Ciclo de vida de un proyecto
 
@@ -140,19 +185,44 @@ secuenciales si para que empieze una nueva fase debe si o sí terminar la
 anterior. Las fases superpuestas admiten la ejecución en paralelo de distintas
 fases del proyecto.
 
+Una división genérica que aplica prácticamente cualquier proyecto sería la
+siguiente:
+* Inicio
+* Planificación
+* Ejecución y control
+* Cierre
+
 ### Ciclos de vida predictivos
 
-PMBOK 2.4.2.2, Heldman Cap 1, Waterfall model (wikipedia)
+_Véase PMBOK 2.4.2.2_
 
 ### Ciclos de vida iterativos
 
-PMBOK 2.4.2.3, Heldman Cap 1
+_Veáse PMBOK 2.4.2.3_
 
 ## Procesos de la dirección de proyectos
 
-PMBOK 3, Heldman Cap 1
+_Veáse PMBOK 3_
+
+Por proceso entendemos una acción que se lleva a cabo sobre una entrada y que
+produce una salida. Por ejemplo en desarrollo web y en otras áreas de la
+ingeniería de software un proceso es implementar una base de datos a partir
+de un diagrama ER. El diagrama ER es la entrada y la salida es un script (en SQL
+probablemente) que implementa esa estructura relacional. Las herramientas,
+conocimientos y técnicas utilizadas en el proceso para convertir la entrada en
+la salida esperada son propias de cada proceso.
+Los procesos que se llevan a cabo para finalizar un proyecto se enmarcan en dos
+categorías:
+* **Procesos de la dirección de proyectos:** son los procesos orientados a
+llevar a cabo el proyecto de manera eficiente y ordenada. En el PMBOK son los 47
+procesos descritos del capítulo 4 al 13.
+* **Procesos orientados al producto:** son los procesos que generan el resultado
+propiamente dicho. Varían según la industria o disciplina del proyecto en
+cuestión y forman el grueso del trabajo del proyecto.
 
 ### Grupos de procesos
+
+_Veáse PMBOK 3.2_
 
 En el PMBOK se detallan cinco grupos de procesos en relación a su lugar en el
 ciclo de vida del proyecto. Éstos son:
@@ -162,7 +232,27 @@ ciclo de vida del proyecto. Éstos son:
 * Grupo de procesos de **Monitoreo y Control**
 * Grupo de procesos de **Cierre**
 
+#### Procesos de inicio
+
+Son los procesos destinados a definir un nuevo proyecto o una nueva fase del
+mismo. Estos procesos se encargan de conseguir el apoyo financiero o de otro
+tipo para iniciar el trabajo sobre un proyecto o fase. También es donde se
+definen objetivos iniciales y se realizan esbozos de las variables más
+importantes del proyecto: **alcance**, **costo** y **tiempo**.
+
+#### Procesos de planificación
+
+Son los procesos donde la dirección del proyecto ejerce su mayor influencia.
+Se elaboran y refinan los objetivos planteados en los procesos de inicio y se
+establecen las **líneas base** para el futuro trabajo del proyecto. Los
+resultados obtenidos forman la base futura para los procesos de monitoreo y
+control sobre el trabajo realizado. La mayoría de las herramientas y técnicas
+de este grupo de procesos son del campo de conocimientos específicos al director
+de proyectos y buscan asegurar el éxito y la satisfacción de los interesados.
+
 ### Áreas de conocimiento
+
+_Veáse PMBOK 3.9_
 
 Los 47 procesos definidos en el PMBOK a su vez están organizados en diez áreas
 de conocimiento:
