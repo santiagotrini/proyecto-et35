@@ -50,7 +50,13 @@ Algunas cosas que suelen aparecer por escrito al iniciar un proyecto son:
 * El cronograma de hitos
 * El presupuesto preliminar
 * La lista de interesados
-* El director del proyecto y el patrocinador
+* El director del proyecto y el patrocinador.
+
+La firma de un documento detallando estos ítems es lo que da autoridad para asignar
+recursos al director del proyecto.
+
+#### Recursos
+  Entendemos por recursos de un proyecto todas las cosas necesarias para alcanzar los objetivos del proyecto. Ya sean personas (recursos humanos) o materiales necesarios para terminar el producto o servicio que se intenta desarrollar. En el ámbito de la informática entendemos que todos los recursos necesarios para el desarrollo de software, actualización y mantenimiento de equipos informáticos y redes de computadoras (hardware en general) son los recursos de nuestra especialidad. También podemos ampliar nuestro ámbito a proyectos que tengan que ver con sistemas de control (sensores y actuadores enlazados) o robótica. Cabe destacar que no todos los recursos de nuestra especialidad son estrictamente materiales. Los lenguajes de programación y otras piezas de software que usamos son recursos de la misma manera que el cemento y ladrillos para una constructora. Los recursos generalmente tienen un costo asociado y son limitados, lo que da lugar a restricciones sobre el alcance del proyecto.
 
 ### Monitorear el trabajo del proyecto y realizar el control integrado de cambios
 
@@ -71,6 +77,16 @@ de software por otra más nueva.
 ## Licencias
 
 ### Derecho de autor
+
+El derecho de autor es el conjunto de normas jurídicas que regulan la propiedad
+sobre la obra de un individuo u organización. Por obra entendemos por supuesto
+sistemas informáticos. El derecho de autor puede expirar y la obra o invento puede
+pasar al **dominio público**. En el derecho anglosajón se conoce como _copyright_
+(literalmente derecho de copia). Todo sistema informático, o de manera más general,
+todo el código que escribimos como programadores pertenece a sus autores al menos
+que se indique lo contrario.
+
+Las **licencias de software** pueden establecer entre otras cosas: la cesión de determinados derechos del propietario al usuario final sobre una o varias copias del programa informático, los límites en la responsabilidad por fallos, el plazo de cesión de los derechos, el ámbito geográfico de validez del contrato​ e incluso pueden establecer determinados compromisos del usuario final hacia el propietario, tales como la no cesión del programa a terceros o la no reinstalación del programa en equipos distintos al que se instaló originalmente.
 
 ### GNU GPLv3
 
@@ -117,6 +133,10 @@ Definir el alcance de un proyecto es dar una descripción detallada del proyecto
 
   Es importante que el trabajo final, lo que se entrega, esté bien definido, así como los hitos, que pueden marcar la finalización de una fase, generalmente con algún entregable asociado para verificación por parte de los interesados. Los hitos del proyecto marcan un momento en el qué se pueda controlar el progreso del proyecto y decidir por la continuación del mismo.
 
+#### Restricciones
+
+Las restricciones son los límites impuestos por la organización o los interesados a diversos aspectos del proyecto. Las más comunes son tiempo, costo y alcance. Por ejemplo el cliente puede tener un presupuesto limitado para hacer frente a un proyecto que nos encargan, o un plazo máximo para la entrega del mismo. O si estuviéramos realizando un proyecto que afecta a una población, una restricción de alcance nos indicaría un ámbito o número máximo de personas afectadas. Las restricciones deben ser documentadas ya que serán tenidas en cuenta a la hora de definir el alcance del proyecto. Otra restricción que podemos encontrarnos es relativa a los recursos humanos, tal vez necesitamos gente con habilidades específicas para realizar nuestro proyecto de la que no disponemos en la organización. Gestionar de manera adecuada las restricciones hacen la diferencia entre un proyecto exitoso y uno que fracasa, y es muy importante tenerlas en cuenta a la hora de definir el alcance, el cronograma y el presupuesto del proyecto. Las restricciones generalmente son definidas por los interesados, aunque también a veces pueden ser externas al proyecto. Por ejemplo si tuviéramos el proyecto de viajar a la luna, para la mayor parte de la historia de la humanidad se hubiera dado por imposible, por más que nuestro presupuesto fuera ilimitado.
+
 ### Estructura de desglose del trabajo (EDT)
 
   La estructura de desglose del trabajo es el paso final en la definición del alcance del proyecto. Consiste en un gráfico jerárquico del trabajo a realizar para alcanzar los objetivos del proyecto. El primer nivel consiste en el proyecto entero, y a partir de ahí se descompone el proyecto en unidades cada vez más pequeñas. El objetivo de esta representación es llegar a un nivel dónde las unidades de trabajo sean más fáciles de estimar en su duración o costo, también conocidas como paquetes de trabajo o actividades. Por ejemplo, si el proyecto es el de construir una casa, una actividad en el último nivel de la EDT puede ser pasar los cables, o pintar la cocina, etc. Es importante respetar la jerarquización de las unidades de trabajo, y que en cada nivel esté contenido el esfuerzo total del proyecto. Esta herramienta hace más sencillo gestionar luego el cronograma y el presupuesto del proyecto. La siguiente imagen muestra un ejemplo de EDT.
@@ -129,13 +149,13 @@ Definir el alcance de un proyecto es dar una descripción detallada del proyecto
 1. Dar ejemplos y explicar cada uno de los casos de negocio mencionados.
 2. ¿Qué son los supuestos de un proyecto?
 3. ¿Qué se entiende por alcance de un proyecto?
-4. pregunta
-5. pregunta
-6. pregunta
-7. pregunta
-8. pregunta
-9. pregunta
-10. pregunta
+4. ¿Qué son los requisitos del proyecto?
+5. ¿Qué es un objetivo? ¿Qué quiere decir el acrónimo SMART en relación con los objetivos?
+6. ¿Qué es una restricción? ¿Cuáles son las tres restricciones más comunes en un proyecto?
+7. Realizar una EDT para el proyecto de un sitio web estático.
+8. Dar ejemplos del uso de técnicas de recolección de requisitos para el caso de la pregunta anterior.
+9. ¿Qué representa el último nivel de una EDT?
+10. ¿Por qué definir el alcance es un proceso importante en la planificación?
 
 ## Bibliografía
 
