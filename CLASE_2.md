@@ -88,17 +88,37 @@ que se indique lo contrario.
 
 Las **licencias de software** pueden establecer entre otras cosas: la cesión de determinados derechos del propietario al usuario final sobre una o varias copias del programa informático, los límites en la responsabilidad por fallos, el plazo de cesión de los derechos, el ámbito geográfico de validez del contrato​ e incluso pueden establecer determinados compromisos del usuario final hacia el propietario, tales como la no cesión del programa a terceros o la no reinstalación del programa en equipos distintos al que se instaló originalmente.
 
+El **copyleft** es una práctica legal que consiste en el ejercicio del derecho de autor con el objetivo de propiciar el libre uso y distribución de una obra, exigiendo que los concesionarios preserven las mismas libertades al distribuir sus copias y derivados.​ Los autores pueden aplicar una licencia con copyleft a programas informáticos, obras de arte, textos o cualquier tipo de trabajo creativo que sea regido por el derecho de autor.
+
+El copyleft es propuesto como alternativa y defensa contra las restricciones al público en las que normalmente incurren los editores y la industria del entretenimiento. Se pretende así que quienes poseen los derechos patrimoniales de una obra la ofrezcan mediante una licencia libre; al mismo tiempo que una cláusula adicional (el copyleft en sí) protege los derechos ofrecidos en la licencia de intentos subsecuentes de privatización por parte del público (mientras la obra no pase al dominio público). Las licencias con copyleft son entonces una de las categorías principales de licencia libre; en contraste con las llamadas **licencias permisivas** o sin copyleft, y en contraste con el dominio público.
+
 ### GNU GPLv3
+
+Licencia _copyleft_ de tipo fuerte.
 
 ### Apache License 2.0
 
+Licencia de software de código abierto permisiva. Pero menos permisiva que la MIT.
+
 ### MIT License
 
+Licencia de software de código abierto permisiva.
+
 ### The Unlicense
+
+Esta licencia, literalmente la **no licencia** dice que el software se libera al dominio público resignando cualquier derecho
+de autor sobre la obra.
 
 ## Gestión del alcance del proyecto
 
 El alcance de un proyecto es el producto o servicio que se desea completar en el proyecto. Pero tambien son los resultados que se esperan obtener del proyecto, cómo ganancias, satisfacción de los interesados, etc. El alcance del proyecto debe determinar qué trabajo es parte del proyecto y que se debe entregar o proveer, y también debe definir los límites del proyecto, lo que no es parte del mismo. En general, cuando se inicia un proyecto, antes de la fase de planificación propiamente dicha, tenemos una idea general de que queremos hacer. La idea de definir el alcance del proyecto es la de refinar esos requisitos de alto nivel lo mejor posible. Mientras más esfuerzo pongamos en definir el alcance, menos cambios tendremos que hacer a lo largo de la ejecución del mismo. Esto nos ahorra mayores costos o esfuerzo en la ejecución del proyecto. Además sirve como pauta para la satisfacción de todos los interesados y como línea de control durante el desarrollo del proyecto.
+
+En el contexto del proyecto el alcance puede definirse como:
+* **Alcance del producto:** Las características y funciones que describen un producto, servicio o
+resultado.
+* **Alcance del proyecto:** Es el trabajo realizado para entregar un producto, servicio o resultado con
+las funciones y características especificadas. En ocasiones se considera que el término alcance del
+proyecto incluye el alcance del producto.
 
 Nos interesan los siguientes procesos de esta área:
 * **5.2** Recopilar requisitos
