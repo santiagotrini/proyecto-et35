@@ -86,23 +86,29 @@ pasar al **dominio público**. En el derecho anglosajón se conoce como _copyrig
 todo el código que escribimos como programadores pertenece a sus autores al menos
 que se indique lo contrario.
 
-Las **licencias de software** pueden establecer entre otras cosas: la cesión de determinados derechos del propietario al usuario final sobre una o varias copias del programa informático, los límites en la responsabilidad por fallos, el plazo de cesión de los derechos, el ámbito geográfico de validez del contrato​ e incluso pueden establecer determinados compromisos del usuario final hacia el propietario, tales como la no cesión del programa a terceros o la no reinstalación del programa en equipos distintos al que se instaló originalmente.
+Las **licencias de software** pueden establecer entre otras cosas: la cesión de determinados derechos del propietario al usuario final sobre una o varias copias del programa informático, los límites en la responsabilidad por fallos, el plazo de cesión de los derechos, el ámbito geográfico de validez del contrato​ e incluso pueden establecer determinados compromisos del usuario final hacia el propietario, tales como la no cesión del programa a terceros o la no reinstalación del programa en equipos distintos al que se instaló originalmente. El software propietario generalmente contiene un EULA (_End User License Agreement_) que son los términos legales explícitos con los que se distribuye el software.
 
 El **copyleft** es una práctica legal que consiste en el ejercicio del derecho de autor con el objetivo de propiciar el libre uso y distribución de una obra, exigiendo que los concesionarios preserven las mismas libertades al distribuir sus copias y derivados.​ Los autores pueden aplicar una licencia con copyleft a programas informáticos, obras de arte, textos o cualquier tipo de trabajo creativo que sea regido por el derecho de autor.
 
-El copyleft es propuesto como alternativa y defensa contra las restricciones al público en las que normalmente incurren los editores y la industria del entretenimiento. Se pretende así que quienes poseen los derechos patrimoniales de una obra la ofrezcan mediante una licencia libre; al mismo tiempo que una cláusula adicional (el copyleft en sí) protege los derechos ofrecidos en la licencia de intentos subsecuentes de privatización por parte del público (mientras la obra no pase al dominio público). Las licencias con copyleft son entonces una de las categorías principales de licencia libre; en contraste con las llamadas **licencias permisivas** o sin copyleft, y en contraste con el dominio público.
+El copyleft es propuesto como alternativa y defensa contra las restricciones al público en las que normalmente incurren los editores y la industria del entretenimiento. Se pretende así que quienes poseen los derechos patrimoniales de una obra la ofrezcan mediante una licencia libre; al mismo tiempo que una cláusula adicional (el copyleft en sí) protege los derechos ofrecidos en la licencia de intentos subsecuentes de privatización por parte del público (mientras la obra no pase al dominio público). Las licencias con copyleft son entonces una de las categorías principales de licencia libre, en contraste con las llamadas **licencias permisivas** o sin copyleft, y en contraste con el dominio público.
 
 ### GNU GPLv3
 
-Licencia _copyleft_ de tipo fuerte.
+Licencia _copyleft_ de tipo fuerte. Esta licencia es la versión moderna de la licencia original creada por Richard Stallman
+para la FSF (_Free Software Fundation_) y el proyecto GNU. La idea de esta licencia no es prohibir la distribución comercial
+(con fines de lucro) del software. Pero los trabajos derivados de software bajo esta licencia tienen la obligación de
+conservar esta licencia. Un ejemplo de software bajo esta licencia que persigue fines comerciales es Red Hat.  
 
 ### Apache License 2.0
 
-Licencia de software de código abierto permisiva. Pero menos permisiva que la MIT.
+Licencia de software de código abierto permisiva. Permite cambiar el tipo de licencia en versiones modificadas del software
+a diferencia de la GPL. A diferencia de la licencia MIT cualquier cambio realizado en el software original debe ser informado
+explícitamente.
 
 ### MIT License
 
-Licencia de software de código abierto permisiva.
+Licencia de software de código abierto permisiva. Licencia simple que permite prácticamente hacer cualquier cosa con el software
+pero desliga al autor de ofrecer cualquier garantía o recibir juicio alguno por parte de los usuarios.
 
 ### The Unlicense
 
