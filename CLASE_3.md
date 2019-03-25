@@ -2,6 +2,8 @@
 
 ## Gestión del tiempo del proyecto
 
+_Veáse PMBOK 6_
+
 Todos los procesos orientados a gestionar los plazos del proyecto pertenecen a esta área. Los procesos que describimos a continuación tienen como objetivo definir el cronograma del proyecto. Esto depende en mayor medida del alcance previamente definido y una de las entradas de mayor importancia para la planificacion del cronograma es la EDT del proyecto. Ademas el cronograma que se decida en la planificacion nos servira como linea base para el control de los tiempos del proyecto.
 
 Los procesos del PMBOK que nos interesan para la gestión del tiempo del proyecto son los siguientes:
@@ -13,17 +15,46 @@ Los procesos del PMBOK que nos interesan para la gestión del tiempo del proyect
 
 ### Definir las actividades
 
-La primer tarea en la planificación de las actividades del proyecto es definirlas. El resultado final de este proceso es una lista detallada de todas las actividades y sus duraciones estimadas. Para poder realizar esta lista necesitamos una buena EDT realizada previamente. Para el estándar del PMI los nodos hoja (los nodos que no tienen hijos) en el gráfico de la EDT son denominados paquetes de trabajo. Cada paquete de trabajo puede tener un número (relativamente pequeño) de actividades asociadas.
+_Veáse PMBOK 6.2 y 6.3_
+
+La primer tarea en la planificación de las actividades del proyecto es definirlas. El resultado final de este proceso es una lista detallada de todas las actividades y sus duraciones estimadas. Para poder realizar esta lista necesitamos una buena EDT realizada previamente. Para el estándar del PMI los nodos _hoja_ (los nodos que no tienen hijos) en el gráfico de la EDT son denominados **paquetes de trabajo**. Cada paquete de trabajo puede tener un número (relativamente pequeño) de actividades asociadas.
 
 En la práctica, y si nuestro proyecto no es excesivamente grande, los nodos finales de la EDT se corresponden con las actividades de nuestro proyecto. Lo importante es realizar la descomposición del trabajo a realizar de manera que la estimación que hagamos de las duraciones sea lo más acertada posible. Cualquier otro atributo relevante de las actividades (recursos humanos necesarios, herramientas para la tarea, etc.) debe aparecer en esta lista. La lista de hitos (distintos entregables para el cliente, fases completadas del proyecto, etc.) también son documentados.
 
+#### Atributos de las actividades
+
+En la lista de actividades a menudo detallamos los atributos más importantes de las actividades. Un
+tipo de atributo a destacar se conoce como **dependencia**. Las dependencias son relaciones lógicas entre actividades que indican cuándo puede iniciar o terminar una actividad en relación con las otras. Las
+dependencias pueden ser:
+* **Obligatorias:** son requeridas por la naturaleza del trabajo. Por ejemplo, no se puede pintar una pared antes de hacer el revoque.
+* **Discrecionales:** son indicadas por las mejores prácticas pero pueden obviarse si se necesita apurar
+el cronograma.
+* **Internas:** son dependencias que tienen su origen dentro del equipo del proyecto o la organización que lo lleva a cabo.
+* **Externas:** son dependencias que surgen por ejemplo cuando se subcontrata una parte del proyecto. Debo esperar a un tercero por fuera de la organización para tener un componente del proyecto.
+
+Además las dependencias se clasifican por la relación que tiene con sus antecesoras o sucesoras:
+* **Final a inicio:** una actividad sucesora no comienza hasta que haya terminado su antecesor.
+* **Final a final:** no se puede finalizar una actividad hasta que su antecesora finalice.
+* **Inicio a inicio:** no se puede iniciar una activdad hasta que su antecesora inicie.
+* **Inicio a final:** no se puede finalizar una actividad hasta que comience su predecesora. Rara vez se usa esta dependencia.
+
+Otros atributos importantes de las actividades son:
+* Adelantos y retrasos
+* Fechas obligatorias
+* Duración estimada
+* Costo estimado
+* Recursos asignados (personas, máquinas, etc.)
+
+
 ### Dependencias de las actividades
 
-Las actividades del proyecto deben secuenciarse de acuerdo a sus relaciones. Teniendo en cuenta la lista de actividades ya definida, deben analizarse las relaciones que existen entre las mismas. Para realizar el diagrama de red tenemos que estipular un sólo tipo de dependencia temporal entre las actividades: que una actividad sucesora deba esperar a que termine otra actividad que la precede. Esta dependencia de final a inicio nos permite armar el diagrama de red y calcular la ruta crítica.
+_Veáse PMBOK 6.3_
+
+Las actividades del proyecto deben secuenciarse de acuerdo a sus relaciones. Teniendo en cuenta la lista de actividades ya definida, deben analizarse las relaciones que existen entre las mismas. Para secuenciar las actividades y armar un cronograma a menudo se usa el **método del camino crítico** (_CPM Critical Path Method_). El CPM es un método que ayuda a calcular parámetros básicos del cronograma del proyecto. La manera gráfica de realizarlo es a través de un **diagrama de red**.
 
 #### Diagrama de red
 
-Un diagrama de red es un grafo dirigido que representa las dependencias y duraciones de todas las actividades de un proyecto. Además permite realizar rápidamente el cálculo de la ruta crítica del proyecto y de la holgura de cada actividad. Cada actividad es un nodo o vértice del grafo dónde se representan los siguientes atributos de cada actividad:
+Un diagrama de red es un _grafo dirigido_ que representa las dependencias y duraciones de todas las actividades de un proyecto. Además permite realizar rápidamente el cálculo de la ruta crítica del proyecto y de la holgura de cada actividad. Cada actividad es un nodo o vértice del grafo dónde se representan los siguientes atributos de cada actividad:
 
 * ID o nombre de la actividad
 * Duración (DR)

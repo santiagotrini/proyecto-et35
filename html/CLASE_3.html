@@ -76,6 +76,7 @@
 <a id="user-content-unidad-1---clase-3" class="anchor" href="#unidad-1---clase-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Unidad 1 - Clase 3</h1>
 <h2>
 <a id="user-content-gestión-del-tiempo-del-proyecto" class="anchor" href="#gesti%C3%B3n-del-tiempo-del-proyecto" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gestión del tiempo del proyecto</h2>
+<p><em>Veáse PMBOK 6</em></p>
 <p>Todos los procesos orientados a gestionar los plazos del proyecto pertenecen a esta área. Los procesos que describimos a continuación tienen como objetivo definir el cronograma del proyecto. Esto depende en mayor medida del alcance previamente definido y una de las entradas de mayor importancia para la planificacion del cronograma es la EDT del proyecto. Ademas el cronograma que se decida en la planificacion nos servira como linea base para el control de los tiempos del proyecto.</p>
 <p>Los procesos del PMBOK que nos interesan para la gestión del tiempo del proyecto son los siguientes:</p>
 <ul>
@@ -92,14 +93,51 @@
 </ul>
 <h3>
 <a id="user-content-definir-las-actividades" class="anchor" href="#definir-las-actividades" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Definir las actividades</h3>
-<p>La primer tarea en la planificación de las actividades del proyecto es definirlas. El resultado final de este proceso es una lista detallada de todas las actividades y sus duraciones estimadas. Para poder realizar esta lista necesitamos una buena EDT realizada previamente. Para el estándar del PMI los nodos hoja (los nodos que no tienen hijos) en el gráfico de la EDT son denominados paquetes de trabajo. Cada paquete de trabajo puede tener un número (relativamente pequeño) de actividades asociadas.</p>
+<p><em>Veáse PMBOK 6.2 y 6.3</em></p>
+<p>La primer tarea en la planificación de las actividades del proyecto es definirlas. El resultado final de este proceso es una lista detallada de todas las actividades y sus duraciones estimadas. Para poder realizar esta lista necesitamos una buena EDT realizada previamente. Para el estándar del PMI los nodos <em>hoja</em> (los nodos que no tienen hijos) en el gráfico de la EDT son denominados <strong>paquetes de trabajo</strong>. Cada paquete de trabajo puede tener un número (relativamente pequeño) de actividades asociadas.</p>
 <p>En la práctica, y si nuestro proyecto no es excesivamente grande, los nodos finales de la EDT se corresponden con las actividades de nuestro proyecto. Lo importante es realizar la descomposición del trabajo a realizar de manera que la estimación que hagamos de las duraciones sea lo más acertada posible. Cualquier otro atributo relevante de las actividades (recursos humanos necesarios, herramientas para la tarea, etc.) debe aparecer en esta lista. La lista de hitos (distintos entregables para el cliente, fases completadas del proyecto, etc.) también son documentados.</p>
+<h4>
+<a id="user-content-atributos-de-las-actividades" class="anchor" href="#atributos-de-las-actividades" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Atributos de las actividades</h4>
+<p>En la lista de actividades a menudo detallamos los atributos más importantes de las actividades. Un
+tipo de atributo a destacar se conoce como <strong>dependencia</strong>. Las dependencias son relaciones lógicas entre actividades que indican cuándo puede iniciar o terminar una actividad en relación con las otras. Las
+dependencias pueden ser:</p>
+<ul>
+<li>
+<strong>Obligatorias:</strong> son requeridas por la naturaleza del trabajo. Por ejemplo, no se puede pintar una pared antes de hacer el revoque.</li>
+<li>
+<strong>Discrecionales:</strong> son indicadas por las mejores prácticas pero pueden obviarse si se necesita apurar
+el cronograma.</li>
+<li>
+<strong>Internas:</strong> son dependencias que tienen su origen dentro del equipo del proyecto o la organización que lo lleva a cabo.</li>
+<li>
+<strong>Externas:</strong> son dependencias que surgen por ejemplo cuando se subcontrata una parte del proyecto. Debo esperar a un tercero por fuera de la organización para tener un componente del proyecto.</li>
+</ul>
+<p>Además las dependencias se clasifican por la relación que tiene con sus antecesoras o sucesoras:</p>
+<ul>
+<li>
+<strong>Final a inicio:</strong> una actividad sucesora no comienza hasta que haya terminado su antecesor.</li>
+<li>
+<strong>Final a final:</strong> no se puede finalizar una actividad hasta que su antecesora finalice.</li>
+<li>
+<strong>Inicio a inicio:</strong> no se puede iniciar una activdad hasta que su antecesora inicie.</li>
+<li>
+<strong>Inicio a final:</strong> no se puede finalizar una actividad hasta que comience su predecesora. Rara vez se usa esta dependencia.</li>
+</ul>
+<p>Otros atributos importantes de las actividades son:</p>
+<ul>
+<li>Adelantos y retrasos</li>
+<li>Fechas obligatorias</li>
+<li>Duración estimada</li>
+<li>Costo estimado</li>
+<li>Recursos asignados (personas, máquinas, etc.)</li>
+</ul>
 <h3>
 <a id="user-content-dependencias-de-las-actividades" class="anchor" href="#dependencias-de-las-actividades" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dependencias de las actividades</h3>
-<p>Las actividades del proyecto deben secuenciarse de acuerdo a sus relaciones. Teniendo en cuenta la lista de actividades ya definida, deben analizarse las relaciones que existen entre las mismas. Para realizar el diagrama de red tenemos que estipular un sólo tipo de dependencia temporal entre las actividades: que una actividad sucesora deba esperar a que termine otra actividad que la precede. Esta dependencia de final a inicio nos permite armar el diagrama de red y calcular la ruta crítica.</p>
+<p><em>Veáse PMBOK 6.3</em></p>
+<p>Las actividades del proyecto deben secuenciarse de acuerdo a sus relaciones. Teniendo en cuenta la lista de actividades ya definida, deben analizarse las relaciones que existen entre las mismas. Para secuenciar las actividades y armar un cronograma a menudo se usa el <strong>método del camino crítico</strong> (<em>CPM Critical Path Method</em>). El CPM es un método que ayuda a calcular parámetros básicos del cronograma del proyecto. La manera gráfica de realizarlo es a través de un <strong>diagrama de red</strong>.</p>
 <h4>
 <a id="user-content-diagrama-de-red" class="anchor" href="#diagrama-de-red" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Diagrama de red</h4>
-<p>Un diagrama de red es un grafo dirigido que representa las dependencias y duraciones de todas las actividades de un proyecto. Además permite realizar rápidamente el cálculo de la ruta crítica del proyecto y de la holgura de cada actividad. Cada actividad es un nodo o vértice del grafo dónde se representan los siguientes atributos de cada actividad:</p>
+<p>Un diagrama de red es un <em>grafo dirigido</em> que representa las dependencias y duraciones de todas las actividades de un proyecto. Además permite realizar rápidamente el cálculo de la ruta crítica del proyecto y de la holgura de cada actividad. Cada actividad es un nodo o vértice del grafo dónde se representan los siguientes atributos de cada actividad:</p>
 <ul>
 <li>ID o nombre de la actividad</li>
 <li>Duración (DR)</li>
