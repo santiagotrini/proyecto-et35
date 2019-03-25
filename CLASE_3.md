@@ -26,12 +26,12 @@ Las actividades del proyecto deben secuenciarse de acuerdo a sus relaciones. Ten
 Un diagrama de red es un grafo dirigido que representa las dependencias y duraciones de todas las actividades de un proyecto. Además permite realizar rápidamente el cálculo de la ruta crítica del proyecto y de la holgura de cada actividad. Cada actividad es un nodo o vértice del grafo dónde se representan los siguientes atributos de cada actividad:
 
 * ID o nombre de la actividad
-* Duración
-* Inicio temprano
-* Inicio tardío
-* Finalización temprana
-* Finalización tardía
-* Holgura
+* Duración (DR)
+* Inicio temprano (ES)
+* Inicio tardío (LS)
+* Finalización temprana (EF)
+* Finalización tardía (LF)
+* Holgura (SL)
 
 ![Nodo de un diagrama de red con la leyenda de cada celda (las X no se usan)](img/aon.png)    
 
@@ -48,3 +48,49 @@ Un diagrama de Gantt es una herramienta gráfica que permite representar una lí
 ### Desarrollo del cronograma y control
 
 El cronograma del proyecto representa una línea base para el desarrollo y control del tiempo del proyecto. Comparamos el rendimiento y avance del proyecto contra el cronograma, y gestionamos los recursos de acuerdo a las desviaciones de lo planificado. Generalmente la herramienta esencial para esta tarea es un diagrama de Gantt completo que represente el estado actual real del proyecto. Comparando la ejecución real del proyecto con los plazos acordados durante la planificación podemos gestionar los recursos (humanos, herramientas, insumos) y ajustar las desviaciones que son casi ineludibles, o pactar nuevos plazos con los interesados del proyecto.
+
+## Cuestionario
+
+1. ¿Cuál es la diferencia entre un paquete de trabajo y una actividad?
+2. Dar tres ejemplos de actividades y sus atributos.
+3. ¿Qué tipos de dependencia existen entre las actividades?
+4. ¿Qué es la secuenciación de actividades y el método del camino crítico?
+5. Realizar un diagrama de red utilizando la siguiente lista de actividades.
+
+ACT|DUR|PRE
+---|---|---
+A|2|-
+B|3|-
+C|1|A
+D|4|A, B
+E|2|C, D
+F|2|E
+G|3|E
+H|1|F
+I|4|G
+J|2|H, I
+K|3|I
+
+
+6. ¿Para qué sirve calcular la holgura de una actividad?
+7. ¿Qué es un calendario de recursos?
+8. Realizar un diagrama de red utilizando la siguiente lista de actividades.
+
+ACT|DUR|PRE
+---|---|---
+A|1|-
+B|1|A
+C|2|A
+D|4|B
+E|2|C
+F|3|C
+G|2|D
+H|1|E, F
+I|3|G, H
+J|2|I
+K|1|I
+
+9. Realizar los diagramas de Gantt correspondientes a los diagramas de red anteriores.
+10. Asignar recursos a los diagramas de Gantt del ejercicio anterior. ¿Cuántas
+personas necesita el equipo del proyecto si una persona puede realizar una sola actividad
+en simultáneo?
