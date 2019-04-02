@@ -1,0 +1,2304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.5">
+<meta name="author" content="Santiago Trini">
+<title>Proyecto Informático I&#8201;&#8212;&#8201;Unidad 1</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment @import statement when using as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+audio,canvas,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+script{display:none!important}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+:not(pre)>code.nobreak{word-wrap:normal}
+:not(pre)>code.nowrap{white-space:nowrap}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details>summary:first-of-type{cursor:pointer;display:list-item;outline:none;margin-bottom:.75em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;padding-right:.5em}
+pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
+pre.pygments .lineno::before{content:"";margin-right:-.125em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin:0 0 1.25em;padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
+table.tableblock{max-width:100%;border-collapse:separate}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
+table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+</head>
+<body class="book">
+<div id="header">
+<h1>Proyecto Informático I&#8201;&#8212;&#8201;Unidad 1</h1>
+<div class="details">
+<span id="author" class="author">Santiago Trini</span><br>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle">Contenidos</div>
+<ul class="sectlevel1">
+<li><a href="#_definiciones">Definiciones</a>
+<ul class="sectlevel2">
+<li><a href="#_qué_es_un_proyecto">¿Qué es un proyecto?</a></li>
+<li><a href="#_diferencias_entre_proyectos_y_operaciones">Diferencias entre proyectos y operaciones</a></li>
+<li><a href="#_interesados">Interesados</a></li>
+<li><a href="#_equipo_del_proyecto">Equipo del proyecto</a></li>
+</ul>
+</li>
+<li><a href="#_dirección_de_proyectos">Dirección de proyectos</a>
+<ul class="sectlevel2">
+<li><a href="#_estándares_para_la_dirección_de_proyectos">Estándares para la dirección de proyectos</a></li>
+<li><a href="#_habilidades_para_la_dirección_de_proyectos">Habilidades para la dirección de proyectos</a></li>
+</ul>
+</li>
+<li><a href="#_ciclo_de_vida_de_un_proyecto">Ciclo de vida de un proyecto</a>
+<ul class="sectlevel2">
+<li><a href="#_fases_del_proyecto">Fases del proyecto</a></li>
+<li><a href="#_ciclos_de_vida_predictivos">Ciclos de vida predictivos</a></li>
+<li><a href="#_ciclos_de_vida_iterativos">Ciclos de vida iterativos</a></li>
+</ul>
+</li>
+<li><a href="#_procesos_de_la_dirección_de_proyectos">Procesos de la dirección de proyectos</a>
+<ul class="sectlevel2">
+<li><a href="#_grupos_de_procesos">Grupos de procesos</a></li>
+<li><a href="#_áreas_de_conocimiento">Áreas de conocimiento</a></li>
+</ul>
+</li>
+<li><a href="#_gestión_de_la_integración_del_proyecto">Gestión de la integración del proyecto</a>
+<ul class="sectlevel2">
+<li><a href="#_desarrollar_el_acta_de_constitución_del_proyecto">Desarrollar el acta de constitución del proyecto</a></li>
+<li><a href="#_monitorear_el_trabajo_del_proyecto_y_realizar_el_control_integrado_de_cambios">Monitorear el trabajo del proyecto y realizar el control integrado de cambios</a></li>
+</ul>
+</li>
+<li><a href="#_licencias">Licencias</a>
+<ul class="sectlevel2">
+<li><a href="#_derecho_de_autor">Derecho de autor</a></li>
+<li><a href="#_gnu_gplv3">GNU GPLv3</a></li>
+<li><a href="#_apache_license_2_0">Apache License 2.0</a></li>
+<li><a href="#_mit_license">MIT License</a></li>
+<li><a href="#_the_unlicense">The Unlicense</a></li>
+</ul>
+</li>
+<li><a href="#_gestión_del_alcance_del_proyecto">Gestión del alcance del proyecto</a>
+<ul class="sectlevel2">
+<li><a href="#_recolección_y_análisis_de_requisitos">Recolección y análisis de requisitos</a></li>
+<li><a href="#_definición_del_alcance">Definición del alcance</a></li>
+<li><a href="#_estructura_de_desglose_del_trabajo_edt">Estructura de desglose del trabajo (EDT)</a></li>
+</ul>
+</li>
+<li><a href="#_gestión_del_tiempo_del_proyecto">Gestión del tiempo del proyecto</a>
+<ul class="sectlevel2">
+<li><a href="#_definir_las_actividades">Definir las actividades</a></li>
+<li><a href="#_dependencias_de_las_actividades">Dependencias de las actividades</a></li>
+<li><a href="#_desarrollo_del_cronograma_y_control">Desarrollo del cronograma y control</a></li>
+</ul>
+</li>
+<li><a href="#_ejercicios">Ejercicios</a></li>
+<li><a href="#_bibliografía">Bibliografía</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_definiciones">Definiciones</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>En esta primera sección daremos un vistazo a las definiciones básicas y el lenguaje propio de la dirección de proyectos.</p>
+</div>
+<div class="sect2">
+<h3 id="_qué_es_un_proyecto">¿Qué es un proyecto?</h3>
+<div class="paragraph">
+<p><em>Veáse PMBOK 1.2</em></p>
+</div>
+<div class="paragraph">
+<p>Un proyecto es un esfuerzo <strong>temporal</strong> que se lleva a cabo para obtener un resultado.
+Es temporal porque tiene fechas de inicio y fin determinadas.
+Que sea temporal no quiere decir que sea muy acotado en el tiempo, un proyecto puede durar dos semanas o cinco años.
+El final de un proyecto se alcanza cuando se logran los <strong>objetivos</strong> y <strong>metas</strong> del proyecto.
+Pero también se puede decidir terminar antes el proyecto porque sus metas no pueden ser alcanzadas o porque la necesidad que dió origen al proyecto ya no existe.
+El resultado de un proyecto puede ser un producto nuevo, un servicio, un documento de investigación, etc.
+Es importante destacar que el resultado del proyecto es <strong>único</strong>.
+Pongamos un ejemplo: un proyecto puede tener como meta construir una casa.
+Los planos de la casa pueden no ser únicos, el mismo diseño puede construirse en distintos lotes.
+Pero la totalidad del proyecto: construir una casa en tal lote determinado es único.</p>
+</div>
+<div class="paragraph">
+<p>Por supuesto, en esta asignatura nos interesan los proyectos del campo de la informática.
+Ejemplos de proyectos de nuestro campo de conocimiento pueden ser: una aplicación, un sitio web, un sistema de control, el diseño y especificación de un lenguaje de programación, etc.</p>
+</div>
+<div class="paragraph">
+<p>Un proyecto puede involucrar a una persona o a toda una <strong>organización</strong>.
+Por organización entendemos una empresa, una escuela, una ONG, etc.
+Generalmente los proyectos se llevan a cabo dentro de una organización para agregar algo nuevo que responde a una <strong>necesidad</strong> propia de la organización o al pedido de un cliente o usuario.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_diferencias_entre_proyectos_y_operaciones">Diferencias entre proyectos y operaciones</h3>
+<div class="paragraph">
+<p>Las operaciones son actividades <strong>repetitivas</strong> y sin un final en el tiempo determinado dentro de una organización.
+Las operaciones son las actividades regulares dentro de una organización.
+Contrastan de manera clara con los proyectos ya que:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Las operaciones no tienen límites definidos en el tiempo.</p>
+</li>
+<li>
+<p>Las operaciones no producen resultados únicos.
+Siempre producen el mismo resultado.</p>
+</li>
+<li>
+<p>Las operaciones no generan cambios en la organización.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Un ejemplo de la diferencia entre operaciones y proyectos en una empresa de informática podría ser el siguiente.
+Un cliente encarga a una compañía de desarrollo web un nuevo sitio para vender sus productos.
+La concepción, diseño e implementación del sitio es un nuevo proyecto.
+Es entregado en una fecha determinada con el cliente y con un contenido previamente acordado.
+El cliente luego necesita realizar ajustes u obtener soporte técnico de esta compañía para su sitio.
+El soporte brindado es parte de las operaciones de la empresa.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_interesados">Interesados</h3>
+<div class="paragraph">
+<p><em>Veáse PMBOK 2.2</em></p>
+</div>
+<div class="paragraph">
+<p>Los interesados de un proyecto son todos los miembros del equipo del proyecto y todas las personas u organizaciones que se pueden ver afectados por una actividad, decisión o resultado del proyecto.
+Los interesados pueden ser afectados de manera positiva o negativa por el proyecto.
+Es posible, a menudo probable, que los interesados de un proyecto tengan <strong>intereses</strong> contrapuestos y generen conflictos dentro del proyecto.
+Los distintos interesados pueden ejercer distintos grados de <strong>influencia</strong> sobre el desarrollo del proyecto.</p>
+</div>
+<div class="paragraph">
+<p>Los interesados pueden ser <strong>internos</strong> o <strong>externos</strong> a la organización que lleva a cabo el proyecto.
+Es importante que el director del proyecto gestione de manera adecuada las <strong>expectativas</strong> de los distintas partes afectadas por el proyecto.</p>
+</div>
+<div class="paragraph">
+<p>Algunos ejemplos de interesados de un proyecto son:</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Patrocinador
+</td>
+<td class="hdlist2">
+<p>Es la persona o grupo que provee apoyo político, financiero o de otro tipo para facilitar el éxito del proyecto.
+Generalmente es un individuo o grupo con mayor poder dentro de la organización que el director del proyecto y es el que promueve el éxito del mismo hacia los escalafones superiores de la organización.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Clientes y usuarios
+</td>
+<td class="hdlist2">
+<p>Son aquellas personas u organizaciones que se encargan de aprobar el resultado final del proyecto.
+Son los futuros beneficiarios del resultado final del proyecto y por lo tanto son la medida del éxito o fracaso del proyecto.
+A menudo los objetivos del proyecto tienen en cuenta las expectativas de este grupo para garantizar su satisfacción.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Proveedores
+</td>
+<td class="hdlist2">
+<p>Son aquellas organizaciones o personas encargadas de brindar insumos o trabajo requerido para finalizar el proyecto.
+Son externas a la organización que lleva a cabo el proyecto.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_equipo_del_proyecto">Equipo del proyecto</h3>
+<div class="paragraph">
+<p><em>Veáse PMBOK 2.3</em></p>
+</div>
+<div class="paragraph">
+<p>El equipo del proyecto son todas las personas que trabajan para lograr el objetivo del proyecto.
+La cantidad de miembros y su organización interna varía de proyecto en proyecto, pero siempre existe un líder o director del proyecto que se dedica a gestionar y dirigir el esfuerzo colectivo del grupo.
+Las personas que participan de la dirección del proyecto pueden o no involucrarse en el trabajo concreto del proyecto (el trabajo específico del área del proyecto).
+Pero se espera que el director del proyecto sea idóneo en la disciplina del proyecto.
+Es decir, un arquitecto no dirigiría la implementación de un sistema operativo como un ingeniero de software no dirige la construcción de un edificio.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dirección_de_proyectos">Dirección de proyectos</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La dirección de proyectos es la aplicación de conocimientos, habilidades, herramientas y técnicas a las actividades del proyecto para llevarlo a cabo de manera exitosa.
+Generalmente hay un responsable del proyecto, el director del mismo que responde a la organización y a los interesados del proyecto por el desarrollo del mismo.</p>
+</div>
+<div class="sect2">
+<h3 id="_estándares_para_la_dirección_de_proyectos">Estándares para la dirección de proyectos</h3>
+<div class="paragraph">
+<p><em>Veáse PMBOK 1.3</em></p>
+</div>
+<div class="paragraph">
+<p>Existen distintos estándares para la dirección de proyectos, todos muy similares entre sí.
+Entendemos por estándar un conjunto de prácticas recomendadas, que los profesionales de la dirección y gestión de proyectos consideran útiles a la hora de llevar a cabo sus objetivos de manera satisfactoria.
+Es un documento formal que recomienda y busca normalizar una práctica profesional determinada.
+Estos estándares pueden referirse a la dirección de proyectos en general, o a la dirección de proyectos dentro de una rama o industria específica.
+Algunos ejemplos son:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ISO 21500</p>
+</li>
+<li>
+<p>PMBOK</p>
+</li>
+<li>
+<p>ISO/IEC/IEEE 16326 (para ingeniería de software)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>El estándar de referencia que tomamos nosotros es el del PMI (Project Management Institute).
+Sus prácticas están desarrolladas en el PMBOK (Project Management Body of Knowledge) y es de hecho el estándar internacional con mayor presencia.
+También es uno de los más generales, por lo tanto intenta ser de aplicación a casi cualquier situación.</p>
+</div>
+<div class="paragraph">
+<p>El estándar descrito en el PMBOK consta básicamente de 47 procesos con sus entradas y salidas.
+Para organizarlos éstos están divididos en diez áreas de conocimiento relevantes para la dirección de proyectos.
+Además se agrupan en cinco grupos definidos en relación con el ciclo de vida del proyecto.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_habilidades_para_la_dirección_de_proyectos">Habilidades para la dirección de proyectos</h3>
+<div class="paragraph">
+<p><em>Veáse PMBOK 1.7</em></p>
+</div>
+<div class="paragraph">
+<p>El director del proyecto tiene la tarea de satisfacer las necesidades del equipo del proyecto, de las actividades que este lleva a cabo, de los interesados, etc.
+Algunas habilidades con las que debería contar un director de proyectos:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Liderazgo</p>
+</li>
+<li>
+<p>Trabajo en equipo</p>
+</li>
+<li>
+<p>Comunicación</p>
+</li>
+<li>
+<p>Motivación</p>
+</li>
+<li>
+<p>Toma de decisiones</p>
+</li>
+<li>
+<p>Orientación</p>
+</li>
+<li>
+<p>Negociación y gestión de conflictos</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>También es responsabilidad del director del proyecto la planificación del mismo.
+Las dos habilidades más importantes para esto son las de manejar los tiempos y costos del proyecto, ya que cualquier cambio de estos dos factores en general deben ser autorizados por fuera del equipo del proyecto.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ciclo_de_vida_de_un_proyecto">Ciclo de vida de un proyecto</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>Veáse PMBOK 2.4</em></p>
+</div>
+<div class="paragraph">
+<p>El ciclo de vida de un proyecto son las <strong>fases</strong> que atraviesa el proyecto desde su inicio hasta su finalización.
+El número y el nombre de las fases de un proyecto no está escrito en piedra.
+Dependen del tipo de proyecto que se lleva a cabo y de las necesidades de control de la propia organización.
+El proyecto se divide en fases según los <strong>entregables</strong> parciales del proyecto, objetivos, <strong>hitos</strong> o fechas límite de acuerdo a un cronograma preestablecido.
+La división en fases del proyecto provee un marco de referencia mínimo para dirigir y controlar el trabajo del mismo.</p>
+</div>
+<div class="sect2">
+<h3 id="_fases_del_proyecto">Fases del proyecto</h3>
+<div class="paragraph">
+<p><em>Veáse PMBOK 2.4.2</em></p>
+</div>
+<div class="paragraph">
+<p>Un proyecto puede contener un número cualquiera de fases.
+Una fase es una agrupación lógica de actividades del proyecto.
+Una fase debe terminar con algún hito claramente definido y de importancia para la totalidad del proyecto.
+A menudo el cierre de cada fase es una oportunidad para realizar una revisión del trabajo realizado hasta el momento.
+También se debe considerar el cierre de cada fase como un momento propicio para tomar la decisión de continuar o abandonar el proyecto.</p>
+</div>
+<div class="paragraph">
+<p>Las fases de un proyecto pueden estar relacionadas de dos maneras.
+Pueden estar en una relación <strong>secuencial</strong> o <strong>superpuestas</strong> entre sí.
+Las fases son secuenciales si para que empieze una nueva fase debe si o sí terminar la anterior.
+Las fases superpuestas admiten la ejecución en paralelo de distintas fases del proyecto.</p>
+</div>
+<div class="paragraph">
+<p>Una división genérica que aplica prácticamente cualquier proyecto sería la siguiente:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Inicio</p>
+</li>
+<li>
+<p>Planificación</p>
+</li>
+<li>
+<p>Ejecución y control</p>
+</li>
+<li>
+<p>Cierre</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ciclos_de_vida_predictivos">Ciclos de vida predictivos</h3>
+<div class="paragraph">
+<p><em>Véase PMBOK 2.4.2.2</em></p>
+</div>
+<div class="paragraph">
+<p>Los ciclos de vida predictivos se denominan así por estar orientados a la planificación.
+El alcance, el costo y el tiempo del proyecto se determinan lo antes posible para poder mantener los cambios futuros al mínimo.
+Esto se realiza así para bajar los costos ya que cualquier cambio que se quiera introducir al proyecto tiene un costo mayor mientras más avanzado está el desarrollo.
+Este tipo de ciclo de vida permite también mantener los riesgos de fracaso al mínimo posible y formar un equipo del proyecto especializado por cada fase del mismo.
+Generalmente se compone de fases secuenciales o levemente superpuestas.</p>
+</div>
+<div class="paragraph">
+<p>En ingeniería de software tenemos un ejemplo paradigmático de ciclo de vida predictivo.
+El <a href="https://es.wikipedia.org/wiki/Desarrollo_en_cascada">modelo en cascada</a> es un método de desarrollo de software de larga tradición y que pone todo su esfuerzo en evitar cambios al proyecto durante la fase de implementación (código).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ciclos_de_vida_iterativos">Ciclos de vida iterativos</h3>
+<div class="paragraph">
+<p><em>Veáse PMBOK 2.4.2.3</em></p>
+</div>
+<div class="paragraph">
+<p>Los ciclos de vida iterativos e incrementales son aquellos en los cuales, dentro de las fases del proyecto (también llamadas iteraciones), se repiten de manera intencionada una o más actividades del proyecto a medida que aumenta el entendimiento del producto por parte del equipo del proyecto.
+Las iteraciones desarrollan el producto a través de una serie de ciclos repetidos, mientras que los incrementos van añadiendo sucesivamente funcionalidad al producto.
+Estos ciclos de vida desarrollan el producto de forma iterativa y con incrementos graduales.
+Los proyectos iterativos e incrementales pueden desarrollarse en fases, y las propias iteraciones se realizarán de un modo secuencial o superpuesto.</p>
+</div>
+<div class="paragraph">
+<p>Generalmente este tipo de ciclo de vida se prefiere cuando es probable que el alcance del proyecto cambie a lo largo del mismo o cuando se emprende un proyecto poco familiar para el equipo del mismo, incorporando las lecciones aprendidas durante cada iteración.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_procesos_de_la_dirección_de_proyectos">Procesos de la dirección de proyectos</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>Veáse PMBOK 3</em></p>
+</div>
+<div class="paragraph">
+<p>Por proceso entendemos una acción que se lleva a cabo sobre una entrada y que produce una salida. Por ejemplo en desarrollo web y en otras áreas de la ingeniería de software un proceso es implementar una base de datos a partir de un diagrama ER. El diagrama ER es la entrada y la salida es un script (en SQL probablemente) que implementa esa estructura relacional. Las herramientas, conocimientos y técnicas utilizadas en el proceso para convertir la entrada en la salida esperada son propias de cada proceso. Los procesos que se llevan a cabo para finalizar un proyecto se enmarcan en dos categorías:</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Procesos de la dirección de proyectos
+</td>
+<td class="hdlist2">
+<p>Son los procesos orientados a llevar a cabo el proyecto de manera eficiente y ordenada.
+En el PMBOK son los 47 procesos descritos del capítulo 4 al 13.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Procesos orientados al producto
+</td>
+<td class="hdlist2">
+<p>Son los procesos que generan el resultado propiamente dicho.
+Varían según la industria o disciplina del proyecto en cuestión y forman el grueso del trabajo del proyecto.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_grupos_de_procesos">Grupos de procesos</h3>
+<div class="paragraph">
+<p><em>Veáse PMBOK 3.2</em></p>
+</div>
+<div class="paragraph">
+<p>En el PMBOK se detallan cinco grupos de procesos en relación a su lugar en el ciclo de vida del proyecto. Éstos son:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Grupo de procesos de <strong>Inicio</strong></p>
+</li>
+<li>
+<p>Grupo de procesos de <strong>Planificación</strong></p>
+</li>
+<li>
+<p>Grupo de procesos de <strong>Ejecución</strong></p>
+</li>
+<li>
+<p>Grupo de procesos de <strong>Monitoreo y Control</strong></p>
+</li>
+<li>
+<p>Grupo de procesos de <strong>Cierre</strong></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Cabe destacar que según el PMBOK estos cinco grupos no son fases dentro del ciclo de vida del proyecto.
+Estos grupos pueden aparecer dentro de cada fase del proyecto.</p>
+</div>
+<div class="sect3">
+<h4 id="_procesos_de_inicio">Procesos de inicio</h4>
+<div class="paragraph">
+<p><em>Veáse PMBOK 3.3</em></p>
+</div>
+<div class="paragraph">
+<p>Son los procesos destinados a definir un nuevo proyecto o una nueva fase del mismo.
+Estos procesos se encargan de conseguir el apoyo financiero o de otro tipo para iniciar el trabajo sobre un proyecto o fase.
+También es donde se definen objetivos iniciales y se realizan esbozos de las variables más importantes del proyecto: <strong>alcance</strong>, <strong>costo</strong> y <strong>tiempo</strong>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_procesos_de_planificación">Procesos de planificación</h4>
+<div class="paragraph">
+<p><em>Veáse PMBOK 3.4</em></p>
+</div>
+<div class="paragraph">
+<p>Son los procesos donde la dirección del proyecto ejerce su mayor influencia.
+Se elaboran y refinan los objetivos planteados en los procesos de inicio y se establecen las <strong>líneas base</strong> para el futuro trabajo del proyecto.
+Los resultados obtenidos forman la base futura para los procesos de monitoreo y control sobre el trabajo realizado.
+La mayoría de las herramientas y técnicas de este grupo de procesos son del campo de conocimientos específicos al director de proyectos y buscan asegurar el éxito y la satisfacción de los interesados.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_procesos_de_ejecución">Procesos de ejecución</h4>
+<div class="paragraph">
+<p><em>Veáse PMBOK 3.5</em></p>
+</div>
+<div class="paragraph">
+<p>El Grupo de Procesos de Ejecución está compuesto por aquellos procesos realizados para completar el trabajo definido en el plan para la dirección del proyecto a fin de cumplir con las especificaciones del mismo.
+Este Grupo de Procesos implica coordinar personas y recursos, gestionar las expectativas de los interesados, así como integrar y realizar las actividades del proyecto conforme al plan para la dirección del proyecto.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_procesos_de_monitoreo_y_control">Procesos de Monitoreo y Control</h4>
+<div class="paragraph">
+<p><em>Veáse PMBOK 3.6</em></p>
+</div>
+<div class="paragraph">
+<p>En este grupo de procesos la dirección del proyecto realiza la gestión de conflictos y dirige el progreso del mismo, resolviendo los problemas que puedan surgir durante el desarrollo.
+Es responsabilidad del director del proyecto seguir de cerca la evolución del trabajo para asegurar que se cumplan con las fechas establecidas, las restricciones presupuestarias, el alcance definido durante la planificación.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_procesos_de_cierre">Procesos de Cierre</h4>
+<div class="paragraph">
+<p><em>Veáse PMBOK 3.7</em></p>
+</div>
+<div class="paragraph">
+<p>El Grupo de Procesos de Cierre está compuesto por aquellos procesos realizados para finalizar todas las actividades a través de todos los Grupos de Procesos de la Dirección de Proyectos, a fin de completar formalmente el proyecto, una fase del mismo u otras obligaciones contractuales.
+Este Grupo de Procesos, una vez completado, verifica que los procesos definidos se han completado dentro de todos los Grupos de Procesos a fin de cerrar el proyecto o una fase del mismo, según corresponda, y establece formalmente que el proyecto o fase del mismo ha finalizado.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_áreas_de_conocimiento">Áreas de conocimiento</h3>
+<div class="paragraph">
+<p><em>Veáse PMBOK 3.9</em></p>
+</div>
+<div class="paragraph">
+<p>Los 47 procesos definidos en el PMBOK a su vez están organizados en diez áreas de conocimiento:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Gestión de la Integración del Proyecto</strong></p>
+</li>
+<li>
+<p><strong>Gestión del Alcance del Proyecto</strong></p>
+</li>
+<li>
+<p><strong>Gestión del Tiempo del Proyecto</strong></p>
+</li>
+<li>
+<p><strong>Gestión de los Costos del Proyecto</strong></p>
+</li>
+<li>
+<p><strong>Gestión de la Calidad del Proyecto</strong></p>
+</li>
+<li>
+<p><strong>Gestión de los Recursos Humanos del Proyecto</strong></p>
+</li>
+<li>
+<p><strong>Gestión de las Comunicaciones del Proyecto</strong></p>
+</li>
+<li>
+<p><strong>Gestión de los Riesgos del Proyecto</strong></p>
+</li>
+<li>
+<p><strong>Gestión de las Adquisiciones del Proyecto</strong></p>
+</li>
+<li>
+<p><strong>Gestión de los Interesados del Proyecto</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>La división en áreas de conocimiento de los procesos busca separar las distintas herramientas y especialidades dentro de la profesión del director de proyectos.
+Los capítulos 4 al 13 del PMBOK describen los procesos específicos de cada área y su relevancia dentro de la dirección de proyectos.
+La siguiente tabla resume la relación entre los 47 procesos del estándar, los grupos de procesos y las áreas de conocimiento.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/tablapmi.png" alt="tablapmi">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gestión_de_la_integración_del_proyecto">Gestión de la integración del proyecto</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>De acuerdo al PMBOK, el área de integración tiene seis procesos.
+El propósito de esta área es coordinar, combinar y unificar los procesos de la dirección de proyectos pertenecientes a otras áreas.
+Nos interesan tres procesos tal como los describe el PMBOK:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>4.1</strong> Desarrollar el acta de constitución del proyecto.</p>
+</li>
+<li>
+<p><strong>4.4</strong> Monitorear y controlar el trabajo del proyecto.</p>
+</li>
+<li>
+<p><strong>4.5</strong> Realizar el control integrado de cambios.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_desarrollar_el_acta_de_constitución_del_proyecto">Desarrollar el acta de constitución del proyecto</h3>
+<div class="paragraph">
+<p>Este proceso se lleva a cabo prácticamente en cualquier proyecto.
+Se trata básicamente de conseguir autorización por escrito para iniciar un proyecto.
+Es por supuesto indispensable si se trata de un proyecto que requiere destinar recursos financieros o de algún tipo y es lo primero que se hace en un proyecto.
+Es el proceso que lo inicia.
+Requiere algún tipo de formalidad, por ejemplo, la firma de alguna autoridad por encima del proyecto que se va a llevar a cabo.
+Para el PMBOK el documento que se firma y da origen al proyecto se denomina acta de constitución del proyecto.
+Lo que típicamente da origen al proyecto y aparece por escrito en esa acta es lo que se conoce en la jerga como <em>SOW</em> o <strong>enunciado de trabajo</strong> del proyecto.
+Un enunciado de trabajo típico es el pedido de un cliente que se nos acerca pidiendo la implementación de algún sistema de información en particular.</p>
+</div>
+<div class="sect3">
+<h4 id="_caso_de_negocio">Caso de negocio</h4>
+<div class="paragraph">
+<p>Hay que diferenciar el enunciado de trabajo de lo que el PMBOK llama <strong>caso de negocio</strong>.
+Esto último es la necesidad que da origen al proyecto y se pueden distinguir al menos siete tipos diferentes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Demanda del mercado</p>
+</li>
+<li>
+<p>Necesidad de la organización</p>
+</li>
+<li>
+<p>Solicitud de un cliente</p>
+</li>
+<li>
+<p>Avance tecnológico</p>
+</li>
+<li>
+<p>Requisito legal</p>
+</li>
+<li>
+<p>Impacto ecológico</p>
+</li>
+<li>
+<p>Necesidad social</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_acta_de_constitución_del_proyecto">Acta de constitución del proyecto</h4>
+<div class="paragraph">
+<p>Para el PMBOK la salida de este proceso es el acta con toda la información preliminar del proyecto.
+Algunas cosas que suelen aparecer por escrito al iniciar un proyecto son:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>El propósito o justificación del proyecto</p>
+</li>
+<li>
+<p>Los objetivos y requisitos</p>
+</li>
+<li>
+<p>Los supuestos y restricciones</p>
+</li>
+<li>
+<p>Los límites del proyecto</p>
+</li>
+<li>
+<p>El cronograma de hitos</p>
+</li>
+<li>
+<p>El presupuesto preliminar</p>
+</li>
+<li>
+<p>La lista de interesados</p>
+</li>
+<li>
+<p>El director del proyecto y el patrocinador</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>La firma de un documento detallando estos ítems es lo que da autoridad para asignar recursos al director del proyecto.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_recursos">Recursos</h4>
+<div class="paragraph">
+<p>Entendemos por recursos de un proyecto todas las cosas necesarias para alcanzar los objetivos del proyecto.
+Ya sean personas (recursos humanos) o materiales necesarios para terminar el producto o servicio que se intenta desarrollar.
+En el ámbito de la informática entendemos que todos los recursos necesarios para el desarrollo de software, actualización y mantenimiento de equipos informáticos y redes de computadoras (hardware en general) son los recursos de nuestra especialidad.
+También podemos ampliar nuestro ámbito a proyectos que tengan que ver con sistemas de control (sensores y actuadores enlazados) o robótica.
+Cabe destacar que no todos los recursos de nuestra especialidad son estrictamente materiales.
+Los lenguajes de programación y otras piezas de software que usamos son recursos de la misma manera que el cemento y ladrillos para una constructora.
+Los recursos generalmente tienen un costo asociado y son limitados, lo que da lugar a restricciones sobre el alcance del proyecto.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_monitorear_el_trabajo_del_proyecto_y_realizar_el_control_integrado_de_cambios">Monitorear el trabajo del proyecto y realizar el control integrado de cambios</h3>
+<div class="paragraph">
+<p>Estos dos procesos del área de integración son importantes para nosotros porque en ingeniería de software tenemos una herramienta de uso muy difundido que automatiza parte de estos procesos.
+Esa herramienta es un <strong>VCS</strong> (<em>version control system</em>) y la que vamos a utilizar es Git.
+Básicamente estos dos procesos nos hablan de la importancia de saber quién, cómo y cuándo se introducen cambios en el proyecto.
+Ya sea trabajo previamente acordado en la definición del alcance, o cambios propuestos más adelante en el ciclo de vida del proyecto.
+Un VCS nos da la posibilidad de revisar la historia completa del desarrollo (al menos la parte de implementación y <em>testing</em>) del proyecto.
+Además se debe proveer un mecanismo formal para introducir cambios en el proyecto.
+Por ejemplo si se desea agregar una nueva característica a un sistema no definida al inicio, o cambiar una librería de software por otra más nueva.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_licencias">Licencias</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_derecho_de_autor">Derecho de autor</h3>
+<div class="paragraph">
+<p>El derecho de autor es el conjunto de normas jurídicas que regulan la propiedad sobre la obra de un individuo u organización.
+Por obra entendemos por supuesto sistemas informáticos.
+El derecho de autor puede expirar y la obra o invento puede pasar al <strong>dominio público</strong>.
+En el derecho anglosajón se conoce como <em>copyright</em> (literalmente derecho de copia).
+Todo sistema informático, o de manera más general, todo el código que escribimos como programadores pertenece a sus autores al menos que se indique lo contrario.</p>
+</div>
+<div class="paragraph">
+<p>Las <strong>licencias de software</strong> pueden establecer entre otras cosas: la cesión de determinados derechos del propietario al usuario final sobre una o varias copias del programa informático, los límites en la responsabilidad por fallos, el plazo de cesión de los derechos, el ámbito geográfico de validez del contrato​ e incluso pueden establecer determinados compromisos del usuario final hacia el propietario, tales como la no cesión del programa a terceros o la no reinstalación del programa en equipos distintos al que se instaló originalmente.
+El software propietario generalmente contiene un EULA (<em>End User License Agreement</em>) que son los términos legales explícitos con los que se distribuye el software.</p>
+</div>
+<div class="paragraph">
+<p>El <strong>copyleft</strong> es una práctica legal que consiste en el ejercicio del derecho de autor con el objetivo de propiciar el libre uso y distribución de una obra, exigiendo que los concesionarios preserven las mismas libertades al distribuir sus copias y derivados.​
+Los autores pueden aplicar una licencia con copyleft a programas informáticos, obras de arte, textos o cualquier tipo de trabajo creativo que sea regido por el derecho de autor.</p>
+</div>
+<div class="paragraph">
+<p>El copyleft es propuesto como alternativa y defensa contra las restricciones al público en las que normalmente incurren los editores y la industria del entretenimiento.
+Se pretende así que quienes poseen los derechos patrimoniales de una obra la ofrezcan mediante una licencia libre; al mismo tiempo que una cláusula adicional (el copyleft en sí) protege los derechos ofrecidos en la licencia de intentos subsecuentes de privatización por parte del público (mientras la obra no pase al dominio público).
+Las licencias con copyleft son entonces una de las categorías principales de licencia libre, en contraste con las llamadas <strong>licencias permisivas</strong> o sin copyleft, y en contraste con el dominio público.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gnu_gplv3">GNU GPLv3</h3>
+<div class="paragraph">
+<p>Licencia <em>copyleft</em> de tipo fuerte.
+Esta licencia es la versión moderna de la licencia original creada por Richard Stallman para la FSF (<em>Free Software Fundation</em>) y el proyecto GNU.
+La idea de esta licencia no es prohibir la distribución comercial (con fines de lucro) del software.
+Pero los trabajos derivados de software bajo esta licencia tienen la obligación de conservar esta licencia.
+Un ejemplo de software bajo esta licencia que persigue fines comerciales es Red Hat.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_apache_license_2_0">Apache License 2.0</h3>
+<div class="paragraph">
+<p>Licencia de software de código abierto permisiva.
+Permite cambiar el tipo de licencia en versiones modificadas del software a diferencia de la GPL.
+A diferencia de la licencia MIT cualquier cambio realizado en el software original debe ser informado explícitamente.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mit_license">MIT License</h3>
+<div class="paragraph">
+<p>Licencia de software de código abierto permisiva.
+Licencia simple que permite prácticamente hacer cualquier cosa con el software pero desliga al autor de ofrecer cualquier garantía o recibir juicio alguno por parte de los usuarios.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_unlicense">The Unlicense</h3>
+<div class="paragraph">
+<p>Esta licencia, literalmente la <strong>no licencia</strong> dice que el software se libera al dominio público resignando cualquier derecho de autor sobre la obra.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gestión_del_alcance_del_proyecto">Gestión del alcance del proyecto</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>El alcance de un proyecto es el producto o servicio que se desea completar en el proyecto.
+Pero tambien son los resultados que se esperan obtener del proyecto, cómo ganancias, satisfacción de los interesados, etc.
+El alcance del proyecto debe determinar qué trabajo es parte del proyecto y que se debe entregar o proveer, y también debe definir los límites del proyecto, lo que no es parte del mismo.</p>
+</div>
+<div class="paragraph">
+<p>En general, cuando se inicia un proyecto, antes de la fase de planificación propiamente dicha, tenemos una idea general de que queremos hacer.
+La idea de definir el alcance del proyecto es la de refinar esos requisitos de alto nivel lo mejor posible.
+Mientras más esfuerzo pongamos en definir el alcance, menos cambios tendremos que hacer a lo largo de la ejecución del mismo.
+Esto nos ahorra mayores costos o esfuerzo en la ejecución del proyecto.
+Además sirve como pauta para la satisfacción de todos los interesados y como línea de control durante el desarrollo del proyecto.</p>
+</div>
+<div class="paragraph">
+<p>En el contexto del proyecto el alcance puede definirse como:</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Alcance del producto
+</td>
+<td class="hdlist2">
+<p>Las características y funciones que describen un producto, servicio o resultado.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Alcance del proyecto
+</td>
+<td class="hdlist2">
+<p>Es el trabajo realizado para entregar un producto, servicio o resultado con las funciones y características especificadas.
+En ocasiones se considera que el término alcance del proyecto incluye el alcance del producto.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Nos interesan los siguientes procesos de esta área:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>5.2</strong> Recopilar requisitos</p>
+</li>
+<li>
+<p><strong>5.3</strong> Definir el alcance</p>
+</li>
+<li>
+<p><strong>5.4</strong> Crear la EDT</p>
+</li>
+<li>
+<p><strong>5.5</strong> Validar el alcance</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_recolección_y_análisis_de_requisitos">Recolección y análisis de requisitos</h3>
+<div class="paragraph">
+<p>Los requisitos son las características que deben cumplir los entregables del proyecto.
+Generalmente los interesados del proyecto definen los requisitos.
+Los requisitos deben ser documentados para poder ser usados en la planificación, y para tener constancia de qué se espera de manera precisa del producto a entregar.
+Forman un mínimo de lo que se espera, y por lo tanto sirven para controlar el progreso del proyecto y que el mismo se ajuste a la calidad deseada en el resultado final.
+Decimos que los requisitos son funcionales cuándo describen qué debe hacer nuestro producto.
+Esto es muy común en ingeniería de software, generalmente los requisitos funcionales son las capacidades y funciones de nuestra aplicación.
+Los requisitos pueden también ser no funcionales (relativos a la calidad, diseño, costos, etc.).</p>
+</div>
+<div class="paragraph">
+<p>Algunas técnicas de recolección de requisitos son:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Entrevistas: con los interesados, generalmente los clientes o beneficiarios del proyecto.</p>
+</li>
+<li>
+<p>Análisis de documentos: de la organización a la que está destinada el proyecto.</p>
+</li>
+<li>
+<p>Cuestionarios (similar a las entrevistas).</p>
+</li>
+<li>
+<p>Prototipos (para descubrir requisitos que no se ven a primera vista).</p>
+</li>
+<li>
+<p>Observaciones: similar al prototipo, porque las entrevistas pueden dar requisitos incompletos.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Lo importante es generar a través de estas y otras técnicas una documentación exhaustiva sobre los requisitos de nuestro proyecto y posteriormente realizar un análisis integral de los mismos.
+En el análisis de los requisitos buscaremos inconsistencias (requisitos incompatibles) o requisitos que no pueden ser alcanzados dadas las restricciones del proyecto (costo, tiempo, recursos humanos, etc.).
+También hay que eliminar las ambiguedades en los requisitos, y descartar cualquier requisito que no sea verificable, es decir, que no se pueda determinar en un tiempo finito si el proyecto cumple o no dicho requisito.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_definición_del_alcance">Definición del alcance</h3>
+<div class="paragraph">
+<p>Definir el alcance de un proyecto es dar una descripción detallada del proyecto y del producto a realizar.
+Es posible que no todos los requisitos encontrados en la etapa anterior pasen a formar parte del proyecto.
+En esta etapa se definen los requisitos definitivos a partir de la documentación generada en el paso anterior.
+El proceso de definir el alcance debe generar un documento con la descripción final del trabajo a realizar, qué es lo que se va a entregar, los supuestos y las restricciones.
+Aquí podemos definir también explícitamente que cosas no entran en el alcance del proyecto de modo que los interesados del proyecto no se lleven ninguna sorpresa más adelante.
+Este documento o enunciado debe contener lo siguiente:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Descripción del alcance del producto.</p>
+</li>
+<li>
+<p>Criterios de aceptación.</p>
+</li>
+<li>
+<p>Entregables (los productos o servicios que son resultado del proyecto).
+Aquí pueden incluirse también los hitos.</p>
+</li>
+<li>
+<p>Exclusiones.</p>
+</li>
+<li>
+<p>Restricciones.</p>
+</li>
+<li>
+<p>Supuestos.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Es importante que el trabajo final, lo que se entrega, esté bien definido, así como los hitos, que pueden marcar la finalización de una fase, generalmente con algún entregable asociado para verificación por parte de los interesados.
+Los hitos del proyecto marcan un momento en el qué se pueda controlar el progreso del proyecto y decidir por la continuación del mismo.</p>
+</div>
+<div class="sect3">
+<h4 id="_restricciones">Restricciones</h4>
+<div class="paragraph">
+<p>Las restricciones son los límites impuestos por la organización o los interesados a diversos aspectos del proyecto. Las más comunes son tiempo, costo y alcance.
+Por ejemplo el cliente puede tener un presupuesto limitado para hacer frente a un proyecto que nos encargan, o un plazo máximo para la entrega del mismo.
+O si estuviéramos realizando un proyecto que afecta a una población, una restricción de alcance nos indicaría un ámbito o número máximo de personas afectadas.
+Las restricciones deben ser documentadas ya que serán tenidas en cuenta a la hora de definir el alcance del proyecto.
+Otra restricción que podemos encontrarnos es relativa a los recursos humanos, tal vez necesitamos gente con habilidades específicas para realizar nuestro proyecto de la que no disponemos en la organización.
+Gestionar de manera adecuada las restricciones hacen la diferencia entre un proyecto exitoso y uno que fracasa, y es muy importante tenerlas en cuenta a la hora de definir el alcance, el cronograma y el presupuesto del proyecto.
+Las restricciones generalmente son definidas por los interesados, aunque también a veces pueden ser externas al proyecto.
+Por ejemplo si tuviéramos el proyecto de viajar a la luna, para la mayor parte de la historia de la humanidad se hubiera dado por imposible, por más que nuestro presupuesto fuera ilimitado.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_estructura_de_desglose_del_trabajo_edt">Estructura de desglose del trabajo (EDT)</h3>
+<div class="paragraph">
+<p>La estructura de desglose del trabajo es el paso final en la definición del alcance del proyecto.
+Consiste en un gráfico jerárquico del trabajo a realizar para alcanzar los objetivos del proyecto.
+El primer nivel consiste en el proyecto entero, y a partir de ahí se descompone el proyecto en unidades cada vez más pequeñas.
+El objetivo de esta representación es llegar a un nivel dónde las unidades de trabajo sean más fáciles de estimar en su duración o costo, también conocidas como paquetes de trabajo o actividades.
+Por ejemplo, si el proyecto es el de construir una casa, una actividad en el último nivel de la EDT puede ser pasar los cables, o pintar la cocina, etc.
+Es importante respetar la jerarquización de las unidades de trabajo, y que en cada nivel esté contenido el esfuerzo total del proyecto.
+Esta herramienta hace más sencillo gestionar luego el cronograma y el presupuesto del proyecto.
+La siguiente imagen muestra un ejemplo de EDT.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/edt3.png" alt="edt3">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gestión_del_tiempo_del_proyecto">Gestión del tiempo del proyecto</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>Veáse PMBOK 6</em></p>
+</div>
+<div class="paragraph">
+<p>Todos los procesos orientados a gestionar los plazos del proyecto pertenecen a esta área.
+Los procesos que describimos a continuación tienen como objetivo definir el cronograma del proyecto.
+Esto depende en mayor medida del alcance previamente definido y una de las entradas de mayor importancia para la planificacion del cronograma es la EDT del proyecto.
+Ademas el cronograma que se decida en la planificacion nos servira como linea base para el control de los tiempos del proyecto.</p>
+</div>
+<div class="paragraph">
+<p>Los procesos del PMBOK que nos interesan para la gestión del tiempo del proyecto son los siguientes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>6.2</strong> Definir las actividades.</p>
+</li>
+<li>
+<p><strong>6.3</strong> Secuenciar las actividades.</p>
+</li>
+<li>
+<p><strong>6.4</strong> Estimar los recursos de las actividades.</p>
+</li>
+<li>
+<p><strong>6.5</strong> Estimar la duración de las actividades.</p>
+</li>
+<li>
+<p><strong>6.6</strong> Desarrollar el cronograma.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_definir_las_actividades">Definir las actividades</h3>
+<div class="paragraph">
+<p><em>Veáse PMBOK 6.2 y 6.3</em></p>
+</div>
+<div class="paragraph">
+<p>La primer tarea en la planificación de las actividades del proyecto es definirlas.
+El resultado final de este proceso es una lista detallada de todas las actividades y sus duraciones estimadas.
+Para poder realizar esta lista necesitamos una buena EDT realizada previamente.
+Para el estándar del PMI los nodos <em>hoja</em> (los nodos que no tienen hijos) en el gráfico de la EDT son denominados <strong>paquetes de trabajo</strong>.
+Cada paquete de trabajo puede tener un número (relativamente pequeño) de actividades asociadas.</p>
+</div>
+<div class="paragraph">
+<p>En la práctica, y si nuestro proyecto no es excesivamente grande, los nodos finales de la EDT se corresponden con las actividades de nuestro proyecto.
+Lo importante es realizar la descomposición del trabajo a realizar de manera que la estimación que hagamos de las duraciones sea lo más acertada posible.
+Cualquier otro atributo relevante de las actividades (recursos humanos necesarios, herramientas para la tarea, etc.) debe aparecer en esta lista.
+La lista de hitos (distintos entregables para el cliente, fases completadas del proyecto, etc.) también son documentados.</p>
+</div>
+<div class="sect3">
+<h4 id="_atributos_de_las_actividades">Atributos de las actividades</h4>
+<div class="paragraph">
+<p>En la lista de actividades a menudo detallamos los atributos más importantes de las actividades.
+Un tipo de atributo a destacar se conoce como <strong>dependencia</strong>.
+Las dependencias son relaciones lógicas entre actividades que indican cuándo puede iniciar o terminar una actividad en relación con las otras.
+Las dependencias pueden ser:</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Obligatorias
+</td>
+<td class="hdlist2">
+<p>Son requeridas por la naturaleza del trabajo.
+Por ejemplo, no se puede pintar una pared antes de hacer el revoque.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Discrecionales
+</td>
+<td class="hdlist2">
+<p>Son indicadas por las mejores prácticas pero pueden obviarse si se necesita apurar el cronograma.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Internas
+</td>
+<td class="hdlist2">
+<p>Son dependencias que tienen su origen dentro del equipo del proyecto o la organización que lo lleva a cabo.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Externas
+</td>
+<td class="hdlist2">
+<p>Son dependencias que surgen por ejemplo cuando se subcontrata una parte del proyecto.
+Debo esperar a un tercero por fuera de la organización para tener un componente del proyecto.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Además las dependencias se clasifican por la relación que tiene con sus antecesoras o sucesoras:</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Final a inicio
+</td>
+<td class="hdlist2">
+<p>Una actividad sucesora no comienza hasta que haya terminado su antecesor.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Final a final
+</td>
+<td class="hdlist2">
+<p>No se puede finalizar una actividad hasta que su antecesora finalice.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Inicio a inicio
+</td>
+<td class="hdlist2">
+<p>No se puede iniciar una activdad hasta que su antecesora inicie.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Inicio a final
+</td>
+<td class="hdlist2">
+<p>No se puede finalizar una actividad hasta que comience su predecesora. Rara vez se usa esta dependencia.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Otros atributos importantes de las actividades son:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Adelantos y retrasos</p>
+</li>
+<li>
+<p>Fechas obligatorias</p>
+</li>
+<li>
+<p>Duración estimada</p>
+</li>
+<li>
+<p>Costo estimado</p>
+</li>
+<li>
+<p>Recursos asignados (personas, máquinas, etc.)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dependencias_de_las_actividades">Dependencias de las actividades</h3>
+<div class="paragraph">
+<p><em>Veáse PMBOK 6.3</em></p>
+</div>
+<div class="paragraph">
+<p>Las actividades del proyecto deben secuenciarse de acuerdo a sus relaciones.
+Teniendo en cuenta la lista de actividades ya definida, deben analizarse las relaciones que existen entre las mismas.
+Para secuenciar las actividades y armar un cronograma a menudo se usa el <strong>método del camino crítico</strong> (<em>CPM Critical Path Method</em>).
+El CPM es un método que ayuda a calcular parámetros básicos del cronograma del proyecto.
+La manera gráfica de realizarlo es a través de un <strong>diagrama de red</strong>.</p>
+</div>
+<div class="sect3">
+<h4 id="_diagrama_de_red">Diagrama de red</h4>
+<div class="paragraph">
+<p>Un diagrama de red es un <em>grafo dirigido</em> que representa las dependencias y duraciones de todas las actividades de un proyecto.
+Además permite realizar rápidamente el cálculo de la ruta crítica del proyecto y de la holgura de cada actividad.
+Cada actividad es un nodo o vértice del grafo dónde se representan los siguientes atributos de cada actividad:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ID o nombre de la actividad</p>
+</li>
+<li>
+<p>Duración (DR)</p>
+</li>
+<li>
+<p>Inicio temprano (ES)</p>
+</li>
+<li>
+<p>Inicio tardío (LS)</p>
+</li>
+<li>
+<p>Finalización temprana (EF)</p>
+</li>
+<li>
+<p>Finalización tardía (LF)</p>
+</li>
+<li>
+<p>Holgura (SL)</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/aon.png" alt="aon">
+</div>
+</div>
+<div class="paragraph">
+<p>Para el cálculo de la ruta crítica y el tiempo total del proyecto se realiza un paso de izquierda a derecha del diagrama, calculando las fechas de inicio y finalización temprana de cada nodo teniendo en cuenta las dependencias de cada actividad representadas por las flechas.
+Para el cálculo de la holgura se realiza un paso hacia atrás (de derecha a izquierda) calculando los inicios y finalización tardías de cada actividad.
+La holgura de una actividad representa la cantidad en unidades de tiempo (días, horas, etc.) que una actividad puede retrasarse sin afectar el tiempo total del proyecto determinado por la ruta crítica.
+Por definición, las actividades en la ruta crítica tienen cero holgura.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/diag_red.png" alt="diag red">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_diagrama_de_gantt">Diagrama de Gantt</h4>
+<div class="paragraph">
+<p>Un diagrama de Gantt es una herramienta gráfica que permite representar una línea de tiempo con las actividades de un proyecto.
+Su uso es bastante extendido en proyectos de todo tipo de industria.
+Se trata básicamente de una tabla de doble entrada, con las filas representando las distintas actividades e hitos de un proyecto, y las columnas las fechas de un calendario.
+Por este motivo es un gráfico que permite visualizar el cronograma del proyecto de un solo vistazo y representar el avance del mismo.
+La notación más extendida que mostramos en la figura representa en cada fila una barra que se extiende de inicio a fin planificado de cada actividad.
+Muchas veces se usa algún color para representar el avance de cada tarea, su porcentaje completado.
+Las dependencias entre actividades se marcan con líneas entre cada barra, remarcando en rojo las actividades y dependencias que están en la ruta crítica del proyecto.
+Al lado (o dentro) de cada barra se puede asignar equipos o personal responsable de cada actividad.
+Los hitos (que no poseen duración) utilizando rombos, a veces marcando la fecha esperada para llegar a cada uno de los hitos o entregables del proyecto.
+Por último se puede extender una línea gruesa para cada barra que no esté en la ruta crítica marcando la holgura de la misma.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/gantt.png" alt="gantt">
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_desarrollo_del_cronograma_y_control">Desarrollo del cronograma y control</h3>
+<div class="paragraph">
+<p>El cronograma del proyecto representa una línea base para el desarrollo y control del tiempo del proyecto.
+Comparamos el rendimiento y avance del proyecto contra el cronograma, y gestionamos los recursos de acuerdo a las desviaciones de lo planificado.
+Generalmente la herramienta esencial para esta tarea es un diagrama de Gantt completo que represente el estado actual real del proyecto.
+Comparando la ejecución real del proyecto con los plazos acordados durante la planificación podemos gestionar los recursos (humanos, herramientas, insumos) y ajustar las desviaciones que son casi ineludibles, o pactar nuevos plazos con los interesados del proyecto.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ejercicios">Ejercicios</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>¿Qué es un proyecto?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Un proyecto es el esfuerzo de una persona o grupo (empresa, organización) orientado a conseguir uno o varios objetivos.
+Es temporal por definición.
+Se supone que un proyecto tiene fechas de inicio y finalización bien definidas. El resultado del proyecto puede ser un producto, servicio, investigación, etc.
+Si el proyecto alcanza sus objetivos es exitoso, pero si se desea se puede finalizar el proyecto antes de la fecha establecida porque ya no se necesita alcanzar dichos objetivos.
+El resultado de un proyecto debe ser único.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>Contrastar los conceptos de proyecto y operaciones. Marcar las diferencias entre ambos.</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Las operaciones a diferencia de los proyectos son procesos repetitivos.
+Los proyectos por definición dan un resultado único.
+Las operaciones son procesos que se extienden en el tiempo sin límite determinado.
+Los proyectos en cambio son temporales, con fechas de inicio y fin bien definidas.
+Las operaciones generalmente son los procesos que una empresa lleva a cabo para generar ganancias, como una fábrica produciendo clavos en una línea de montaje.
+Los proyectos son esfuerzos que realiza una empresa para generar un nuevo producto o servicio, tal vez transfiriendo el resultado al área de operaciones al terminar.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>¿Quiénes son los interesados en un proyecto? ¿Qué tipos de interesados hay en un proyecto?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Los interesados de un proyecto son todas las personas u organizaciones que se ven afectados de manera positiva o negativa por el proyecto.
+Ya sea por su resultado o por el desarrollo del mismo.
+Podemos nombrar como interesados comunes de un proyecto a los clientes, usuarios, proveedores, el patrocinador del proyecto, etc.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>¿Qué es la dirección de proyectos?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>La dirección de proyectos es la profesión que pone en juego técnicas, herramientas y habilidades específicas para llevar a cabo con éxito un proyecto.
+Esta profesión es el área de especialidad de un director de proyectos, y requiere conocimientos sobre gestión de recursos, planificación, monitoreo y control del trabajo, gestión de conflictos, etc.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>¿Qué es el PMI y el estándar que define?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>El PMI es una organización sin fines de lucro fundada en 1969.
+Su objetivo es asociar a los profesionales de la gestión de proyectos y es de carácter internacional.
+Su objetivo principal es promover la profesión de gestión de proyectos a través de la publicación de estándares y certificaciones profesionales.
+La Guía del PMBOK es un documento publicado por el PMI que describe las prácticas recomendadas por la mayoría de los profesionales de la gestión de proyectos y sirve como estándar para la profesión.
+En su quinta edición describe a la práctica de la dirección de proyectos como la aplicación de 47 procesos definidos en dicho documento.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>¿Qué es el ciclo de vida de un proyecto?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>El ciclo de vida de un proyecto es simplemente el número y nombre de las fases que atraviesa un proyecto concreto, desde su inicio hasta su fin.
+El ciclo de vida de un proyecto varía según la industria o disciplina a la que pertenece un proyecto.
+Por ejemplo, en ingeniería de software, algunas de las fases que atraviesa un proyecto son:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Análisis</p>
+</li>
+<li>
+<p>Diseño</p>
+</li>
+<li>
+<p>Implementación</p>
+</li>
+<li>
+<p>Verificación</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>¿Qué tipos de ciclo de vida existen según el PMBOK?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>En el PMBOK se clasifican los ciclos de vida en predictivos o iterativos.
+También se menciona la posibilidad de ciclos de vida mixtos.
+Pero esencialmente los ciclos de vida pueden estar orientados a mantener una separación estricta entre fases, no volver a fases ya concluídas.
+Estos son los ciclos de vida predictivos.
+O por otro lado pueden estar orientados a los cambios durante el desarrollo del proyecto, y permitir volver a fases anteriores del proyecto.
+O bien realizar una repetición de un grupo de fases secuenciales una y otra vez, refinando el producto a elaborar.
+Estos últimos son los ciclos de vida iterativos.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>Diferenciar los procesos orientados a la dirección de proyectos de los procesos propios de la realización del proyecto.
+Dar un ejemplo, en lo posible dentro del campo de la informática.</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Los procesos orientados a la dirección de proyectos son los que se describen en el PMBOK.
+Se supone que son comunes a cualquier proyecto, sin importar a que industria pertenezca.
+Los procesos orientados a la realización del proyecto son los que son propios de la disciplina a la que pertenece el proyecto.
+Por ejemplo, en la industria del software un proceso típico es llevar a cabo pruebas unitarias.
+Este proceso no tiene sentido en la industria editorial, o en la de la construcción.
+En cambio recolectar requisitos o realizar un cronograma del proyecto son procesos descritos en el PMBOK, comunes a cualquier tipo de proyecto.
+Sin embargo, si estudiamos análisis de sistemas (una disciplina asociada fuertemente a la ingeniería de software) sabemos que recolectar requisitos es un proceso que tuvo su mayor desarrollo y formalización dentro de las disciplinas informáticas.
+Así que la distinción no siempre es del todo clara.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>Explicar brevemente los grupos de procesos del estándar del PMI.</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Los grupos de procesos son:</p>
+</div>
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+Inicio
+</td>
+<td class="hdlist2">
+<p>Todos los procesos relativos al inicio de una fase o del proyecto.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Planificación
+</td>
+<td class="hdlist2">
+<p>Todos los procesos relativos a la planificación de una fase o del proyecto entero. La planificación puede ser relativa a costos, tiempo, alcance, riesgos, etc.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Ejecución
+</td>
+<td class="hdlist2">
+<p>Los procesos relativos a la ejecución del trabajo del proyecto.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Monitoreo y control
+</td>
+<td class="hdlist2">
+<p>Los procesos requeridos para monitorear, regular y revisar el desempeño y el progreso del proyecto, y para introducir cambios si fuera necesario.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Cierre
+</td>
+<td class="hdlist2">
+<p>Los procesos necesarios para dar cierre a una fase o a todo el proyecto de manera formal.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>¿Qué son las áreas de conocimiento que plantea el estándar del PMI?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Las diez áreas de conocimiento que plantea el PMBOK son las distintas subdisciplinas dentro de la gestión de proyectos.
+Por ejemplo, gestión de los costos, del tiempo, del alcance, de los recursos humanos, etc.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>Dar ejemplos y explicar cada uno de los casos de negocio mencionados.</p>
+</li>
+<li>
+<p>¿Qué son los supuestos de un proyecto?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Los supuestos de un proyecto son enunciados que se toman por verdaderos sin prueba alguna.
+Por ejemplo, el director de un proyecto puede empezar una obra suponiendo que hay mano de obra calificada disponible en la zona de la construcción.
+Si un supuesto resulta falso, generalmente acarrea consecuencias negativas para el proyecto.
+Por lo tanto un supuesto es un riesgo que se asume.
+Aunque es un riesgo bajo, conviene documentarlo y tener en cuenta las consecuencias negativas si se descubre la falsedad de dicho supuesto.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>¿Qué se entiende por alcance de un proyecto?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>El alcance de un proyecto es la suma total del trabajo requerido para terminar un proyecto.
+También se entiende bajo el término alcance la totalidad de los productos o servicios que genera un proyecto.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>¿Qué son los requisitos del proyecto?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Los requisitos son una necesidad documentada sobre el contenido, forma o funcionalidad de un producto o servicio.
+Un requisito establece qué debe hacer un producto, pero no cómo.
+La recolección de requisitos (probablemente de un cliente o usuario) es lo primero que se debe hacer antes de comenzar el diseño de un nuevo producto.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>¿Qué es un objetivo?
+¿Qué quiere decir el acrónimo SMART en relación con los objetivos?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Un objetivo, propósito o meta es un motivo por el cuál se realiza un proyecto.
+Es la expresión de un resultado que se quiere alcanzar.
+En gestión de proyectos y otras disciplinas de la administración se suele decir que un objetivo tiene que cumplir con el criterio SMART.</p>
+</div>
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+S
+</td>
+<td class="hdlist2">
+<p>Tiene que ser específico (<em>specific</em>) con respecto a qué es lo que se quiere mejorar o lograr.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+M
+</td>
+<td class="hdlist2">
+<p>Tiene que ser medible (<em>measurable</em>) o dar alguna indicación de cómo se mide su progreso.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+A
+</td>
+<td class="hdlist2">
+<p>Tiene que ser realizable (<em>achievable</em>), no imposible con los recursos de los que se dispone.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+R
+</td>
+<td class="hdlist2">
+<p>Tiene que ser relevante (<em>relevant</em>) para la organización o para el proyecto en sí.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+T
+</td>
+<td class="hdlist2">
+<p>Tiene que tener plazos (<em>time bound</em>), se debe dar un indicio de cuándo se puede alcanzar el objetivo o en qué plazo tiene sentido alcanzarlo.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>¿Qué es una restricción?
+¿Cuáles son las tres restricciones más comunes en un proyecto?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Las tres restricciones más comunes de un proyecto son el alcance, el tiempo y el costo.
+Generalmente están relacionadas entre sí y uno no puede por ejemplo, bajar el costo del proyecto sin incrementar los plazos de finalización.
+Y si se reduce el presupuesto manteniendo los tiempos y plazos acordados, probablemente se reduzca el alcance (número de características tal vez) del producto a entregar.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>Realizar una EDT para el proyecto de un sitio web estático.</p>
+</li>
+<li>
+<p>Dar ejemplos del uso de técnicas de recolección de requisitos para el caso de la pregunta anterior.</p>
+</li>
+<li>
+<p>¿Qué representa el último nivel de una EDT?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>El PMBOK indica que en el último nivel de una EDT se ubican los paquetes de trabajo.
+Los paquetes de trabajo agrupan un número pequeño de actividades.
+A menudo el último nivel de una EDT puede representar directamente las actividades del proyecto.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>¿Por qué definir el alcance es un proceso importante en la planificación?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Para evitar cambios innecesarios en el trabajo requerido por el proyecto cuando estamos en la fase de ejecución.
+Si no definimos bien el alcance al inicio de la planificación no podemos calcular y estimar adecuadamente los costos y plazos del proyecto.
+Si resulta que necesitamos más presupuesto o tiempo cuando ya comenzamos el trabajo del proyecto los interesados (clientes por ejemplo) pueden no estar dispuestos a aumentar el presupuesto o estirar los tiempos del proyecto.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>¿Cuál es la diferencia entre un paquete de trabajo y una actividad?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>La diferencia entre un paquete de trabajo y una actividad es que un paquete de trabajo es un grupo de actividades.
+Generalmente los paquetes de trabajo son los últimos nodos en una EDT, aunque a veces se pueden tomar como actividades las presentes en el último nivel.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>Dar tres ejemplos de actividades y sus atributos.</p>
+</li>
+<li>
+<p>¿Qué tipos de dependencia existen entre las actividades?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Las dependencias posibles son inicio a inicio, final a final, inicio a final, y final a inicio.
+La más común de todas es la última, una actividad debe terminar para que pueda empezar su sucesora.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>¿Qué es la secuenciación de actividades y el método del camino crítico?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>La secuenciación de actividades es la actividad de descubrir las dependencias lógicas entre las actividades.
+Estas dependencias sirven para ordenar las actividades en el cronograma ya que muchas actividades requieren de la finalización de otras actividades previas.
+El método del camino crítico se utiliza para averiguar las posibles fechas de inicio y finalización de cada tarea, y para calcular la ruta crítica y la holgura de cada actividad.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>Realizar un diagrama de red utilizando la siguiente lista de actividades.</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">Actividad</th>
+<th class="tableblock halign-center valign-top">Duración</th>
+<th class="tableblock halign-center valign-top">Predecesores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">B</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">C</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">A, B</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">E</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">C, D</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">F</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">E</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">G</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">E</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">H</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">F</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">I</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">G</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">J</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">H, I</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">K</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">I</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>¿Para qué sirve calcular la holgura de una actividad?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Para saber que actividades están en la ruta crítica, es decir, en que actividades un retraso significa un retraso en la finalización del proyecto.
+También sirve para asignar recursos a las actividades porque sabiendo la holgura sabemos si una actividad puede realizarse en más tiempo de lo estimado en primer lugar.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>¿Qué es un calendario de recursos?</p>
+<details>
+<summary class="title">Respuesta</summary>
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Un calendario de recursos es simplemente una herramienta para saber en qué momento hay disponibilidad de cada recurso para asignar en el proyecto.
+En el calendario de recursos debería indicarse la disponibilidad de todo tipo de recursos: empleados, máquinas, oficinas, etc.</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>Realizar un diagrama de red utilizando la siguiente lista de actividades.</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">Actividad</th>
+<th class="tableblock halign-center valign-top">Duración</th>
+<th class="tableblock halign-center valign-top">Predecesores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">B</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">C</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">A</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">B</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">E</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">C</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">F</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">C</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">G</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">D</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">H</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">E, F</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">I</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">G, H</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">J</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">I</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">K</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">I</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Realizar los diagramas de Gantt correspondientes a los diagramas de red anteriores.</p>
+</li>
+<li>
+<p>Asignar recursos a los diagramas de Gantt del ejercicio anterior.
+¿Cuántas personas necesita el equipo del proyecto si una persona puede realizar una sola actividad en simultáneo?</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bibliografía">Bibliografía</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>AAVV. (2013). Guía de los fundamentos para la dirección de proyectos (guía del PMBOK®) - Quinta edición.</p>
+</li>
+<li>
+<p>Heldman, K. (2013). PMP: Project Management Professional Exam Study Guide. Sybex. (En inglés).</p>
+</li>
+<li>
+<p>Wikipedia contributors. "Project management." Wikipedia, The Free Encyclopedia. (En inglés).</p>
+</li>
+<li>
+<p>Wikipedia contributors. "Waterfall model." Wikipedia, The Free Encyclopedia. (En inglés).</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2019-04-02 20:35:16 -0300
+</div>
+</div>
+</body>
+</html>
