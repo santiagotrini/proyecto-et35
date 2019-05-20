@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+gem "github-pages", group: :jekyll_plugins
+title: Proyecto Informático I
+description: Apuntes para la materia de la ET Nº 35
