@@ -455,6 +455,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_ayuda">Ayuda</a></li>
 <li><a href="#_navegación">Navegación</a></li>
 <li><a href="#_manipulación_de_archivos_y_directorios">Manipulación de archivos y directorios</a></li>
+<li><a href="#_redirección">Redirección</a></li>
 </ul>
 </li>
 <li><a href="#_git">Git</a>
@@ -657,6 +658,73 @@ Para invocar la ayuda de cualquier comando simplemente usamos <code>man comando<
 </div>
 </div>
 </div>
+<div class="paragraph">
+<p>Si queremos trabajar usando <code>rm</code>, <code>mv</code> y <code>cp</code> con directorios tenemos que indicar la opción <code>-r</code> (recursivo) para que copie, mueva o elimine un directorio con todos sus subdirectorios y archivos. Si no queremos que nos pida confirmación (con archivos de solo lectura) podemos usar el <em>flag</em> <code>-f</code> (<em>force</em>).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_redirección">Redirección</h3>
+<div class="paragraph">
+<p>Para entender el concepto de <strong>redirección</strong> y <strong>piping</strong> primero hay que entender los <em>streams</em> estándar. Hay tres <em>streams</em> llamados <strong>stdin</strong> (entrada estándar), <strong>stdout</strong> (salida estándar) y <strong>stderr</strong> (error estándar). Estos tres <em>streams</em> o flujos de datos están conectados por defecto al teclado (stdin) y a la pantalla de la terminal (stdout y stderr).</p>
+</div>
+<div class="paragraph">
+<p>Los operadores de redirección sirven para llevar la salida o la entrada estándar a un archivo distinto los que están configurados por defecto. Un ejemplo sirve para clarificar. Supongamos que queremos guardar la palabra &#8220;Hola&#8221; en un archivo llamado <code>hola.txt</code>. Podemos escribir &#8220;Hola&#8221; en pantalla usando <code>echo</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ echo Hola
+$ Hola</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Eso sucede porque <code>echo</code> imprime sus argumentos en <em>stdout</em>.
+Podemos imprimir la palabra en un archivo usando el operador <code>&gt;</code> de redirección de esta manera.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ echo Hola &gt; hola.txt
+$ cat hola.txt
+$ Hola</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Efectivamente estamos redireccionando <em>stdout</em> al archivo <code>hola.txt</code> en vez de la pantalla de la terminal. Después simplemente usamos <code>cat</code> para mostrar el archivo en pantalla.</p>
+</div>
+<div class="paragraph">
+<p>Ahora supongamos que tenemos un archivo de texto con los siguientes contenidos:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ cat archivo.txt
+4
+2
+3
+0</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Si queremos ordenarlos podemos usar <code>sort</code> y redireccionar <code>stdin</code> al archivo en vez del teclado de la siguiente manera:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ sort &lt; archivo.txt
+0
+2
+3
+4</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Por último vemos el operador <code>|</code> (<em>pipe</em> o tubería). A menudo tenemos que ver una archivo de texto en la terminal que es muy largo para la pantalla. Podemos usar <code>|</code> y <code>less</code> que es un <em>pager</em>, un programa que realiza paginación.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ cat archivo-muy-largo.txt | less</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Estamos redireccionando la salida de <code>cat</code> a la entrada de <code>less</code>, haciendo una especie de &#8220;tubería&#8221; entre los dos comandos.</p>
+</div>
 </div>
 </div>
 </div>
@@ -676,7 +744,7 @@ Para invocar la ayuda de cualquier comando simplemente usamos <code>man comando<
 <p>Otros VCS que existen y compiten con Git son por ejemplo: Mercurial, CVS y Subversion. También la plataforma de Google Drive funciona en cierta medida como un VCS.</p>
 </div>
 <div class="paragraph">
-<p>La característica fundamental de Git es que es un sistema de control de versiones distribuido, esto quiere decir que no depende de la conexión a un servidor remoto para trabajar. Todo es local, como uno de sus lemas.</p>
+<p>La característica fundamental de Git es que es un sistema de control de versiones distribuido, esto quiere decir que no depende de la conexión a un servidor remoto para trabajar. Todo es local.</p>
 </div>
 <div class="sect2">
 <h3 id="_git_en_la_línea_de_comandos">Git en la línea de comandos</h3>
@@ -684,25 +752,118 @@ Para invocar la ayuda de cualquier comando simplemente usamos <code>man comando<
 <p>Todos los comandos en Git tienen la forma de <code>git &lt;verbo&gt;</code> donde reemplazamos verbo por los distintos comandos específicos.</p>
 </div>
 <div class="paragraph">
-<p>Por ejemplo para iniciar un nuevo repositorio en la carpeta actual ejecutamos <code>git init</code>, (iniciar).</p>
+<p>Por ejemplo para iniciar un nuevo repositorio en la carpeta actual ejecutamos <code>git init</code>, (iniciar). Los comandos de Git podemos dividirlos en los comandos de inicialización como <code>init</code>. Los que me permiten guardar cambios en un repositorio y hacer ramas. Y por último los que usamos para trabajar con repositorios remotos.</p>
+</div>
+<div class="sect3">
+<h4 id="_creación_de_repositorios">Creación de repositorios</h4>
+<div class="paragraph">
+<p>Un repositorio de Git es una carpeta o directorio donde quiero realizar un control de los cambios en sus archivos a lo largo del tiempo. Supongamos que es una carpeta llamada <code>sitio</code> donde voy a guardar los archivos de un sitio web.
+Para convertir la carpeta a un repositorio de Git ejecutamos dentro de la carpeta el comando <code>git init</code> y listo.</p>
+</div>
+<div class="paragraph">
+<p>Hay otra manera de obtener un repositorio, que es clonarlo de un servidor. Para eso usamos el comando <code>git clone &lt;url&gt;</code> donde reemplazamos <code>&lt;url&gt;</code> por la URL del repositorio en el servidor, como por ejemplo <code><a href="https://github.com/escuela-tecnica-35/oixum-docs.git" class="bare">https://github.com/escuela-tecnica-35/oixum-docs.git</a></code>. Después de clonar obtenemos un directorio de igual nombre al repositorio remoto.</p>
+</div>
+<div class="paragraph">
+<p>En ambos casos podemos constatar que tenemos un directorio es un repositorio de Git si encontramos una carpeta oculta con el nombre <code>.git</code>. En ese directorio Git guarda una pequeña base de datos con las distintas versiones históricas de mis archivos y otras cosas que utiliza la aplicación.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_trabajando_con_repositorios">Trabajando con repositorios</h4>
+<div class="paragraph">
+<p>Para entender Git, lo primero que hay que entender son los estados en los que pueden estar los archivos en un repositorio. En primer lugar todos los archivos se dividen en <em>tracked</em> y <em>untracked</em>. Es decir los archivos que están siendo <strong>versionados</strong> y se guarda su historia son los que están &#8220;trackeados&#8221;. De los que no nos interesa seguir sus cambios decimos que están sin &#8220;trackear&#8221; (<em>untracked</em>).</p>
+</div>
+<div class="paragraph">
+<p>En segundo lugar, de los archivos &#8220;trackeados&#8221; decimos que pueden estar modificados o sin modificar (<em>modified</em> y <em>unmodified</em>). Es decir que Git sabe cuando editamos un archivo y lo guardamos (en un editor de texto por ejemplo).</p>
+</div>
+<div class="paragraph">
+<p>Por último los archivos modificados pueden o no estar en el <em>stage</em>. El <em>stage</em> o <em>staging area</em> es el lugar donde están los archivos que van a entrar en el próximo <em>commit</em>. Un <em>commit</em> es una foto de un momento determinado de nuestra carpeta. En cierta medida es una versión de nuestro proyecto que guardamos y a la que podemos volver de ser necesario.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/lifecycle.png" alt="Estados" width="600" height="400">
+</div>
+</div>
+<div class="paragraph">
+<p>En resumen los estados son cuatro: <em>untracked</em>, sin modificar, modificado y <em>staged</em>.</p>
+</div>
+<div class="paragraph">
+<p>Los comandos de Git relevantes aquí son en esencia dos: <code>git add</code> y <code>git commit</code>. El comando <code>add</code> es multiuso, sirve para empezar a &#8220;trackear&#8221; archivos y también sirve para agregarlos al <em>stage</em>. Solo agrega archivos al <em>stage</em> si fueron modificados desde el último <em>commit</em> o si no estaban siendo &#8220;trackeados&#8221; aún. Generalmente lo usamos escribiendo <code>git add .</code> que significa agregar todos los archivos del directorio, incluyendo subdirectorios. También se puede usar para poner en el <em>stage</em> archivos individuales escribiendo <code>git add &lt;archivo&gt;</code>.</p>
+</div>
+<div class="paragraph">
+<p>Para realizar un <em>commit</em> de lo que está en el <em>stage</em> usamos <code>git commit</code>. Si lo ejecutamos así se abre un editor de texto (generalmente Vim) para que ingresemos un mensaje que describa el por qué del <em>commit</em>. Cuando &#8220;commiteamos&#8221; los archivos que estaban en el <em>stage</em> pasan al estado de <em>unmodified</em> como muestra la imagen. Podemos evitar que se abra el editor de texto usando el <em>flag</em> <code>-m</code> (mensaje) de la siguiente manera: <code>git commit -m "mensaje"</code>. También podemos saltear la parte de agregar al <em>stage</em> usando <code>git commit -am "mensaje"</code>, pero cabe aclarar que no se agregan archivos no &#8220;trackeados&#8221; al <em>stage</em>, a diferencia de usar <code>git add .</code>.</p>
+</div>
+<div class="sect4">
+<h5 id="_branching">Branching</h5>
+<div class="paragraph">
+<p>Una característica importante de Git es que permite hacer ramas (<em>branches</em>) de manera eficiente. Todo repositorio tiene al menos una rama, generalmente llamada <code>master</code> por defecto. Si trabajamos con una sola rama la historia de nuestro repositorio es como una línea del tiempo, un <em>commit</em> sucede a otro.</p>
+</div>
+<div class="paragraph">
+<p>Crear ramas nos permite armar historias divergentes dentro de nuestro desarrollo. Esto es útil porque podemos realizar experimentos fuera de nuestra rama principal y elegir entre fusionar la rama con <code>master</code> o descartarla completamente.</p>
+</div>
+<div class="paragraph">
+<p>Los comandos que usamos son tres: <code>git branch</code>, <code>git merge</code> y <code>git checkout</code>.
+Si ejecutamos <code>git branch</code> sin argumentos nos da una lista de todas las ramas del repositorio. Usando <code>git branch rama</code> creamos una nueva rama con el nombre &#8220;rama&#8221;. Conviene darle un nombre que describa el propósito de la rama como <code>arregla-bug-25</code> o <code>algoritmo-factorial-recursivo</code>. Para cambiar de la rama en la que estamos a otra usamos <code>git checkout &lt;rama&gt;</code> reemplazando con el nombre de la rama. Podemos crear una rama y cambiar a la misma usando el comando <code>git checkout -b &lt;rama&gt;</code>. Por supuesto podemos eliminar una rama usando <code>git branch -d &lt;rama&gt;</code>. Cuando estamos listos para fusionar una rama a la rama <code>master</code> conviene cambiar primero a <code>master</code> y después fusionar la rama. Lo hacemos de la siguiente manera.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ git branch
+On branch hotfix
+$ git checkout master
+$ git merge hotfix
+$ git branch -d hotfix</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Cabe aclarar que para cambiar de ramas con <code>checkout</code> tenemos que estar en un estado que Git llama <em>working tree clean</em>. Eso quiere decir que si tenemos cambios que no &#8220;commiteamos&#8221; Git no me va a dejar cambiar de rama. Una vez que fusionamos una rama y ya no la necesitamos conviene borrarla.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_comandos_que_muestran_información">Comandos que muestran información</h4>
+<div class="paragraph">
+<p>Para ver la historia de <em>commits</em> de un repositorio podemos usar <code>git log</code>. Para ver el estado de los archivos en el repositorio <code>git status</code> es muy útil.
+Los dos comandos aceptan varias <em>flags</em>. Para ver la ayuda de un comando en particular podemos usar <code>git help &lt;comando&gt;</code>. Por ejemplo <code>git help status</code> nos da la <em>man page</em> de <code>git status</code>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_trabajando_con_repositorios_remotos">Trabajando con repositorios remotos</h4>
+<div class="paragraph">
+<p>Para trabajar con repositorios en la red (generalmente Internet) utilizamos <code>git push</code>, <code>git remote</code> y <code>git pull</code>.</p>
+</div>
+<div class="paragraph">
+<p>Cuando clonamos un repositorio de GitHub, hacemos cambios localmente y queremos subir esos cambios a GitHub usamos simplemente <code>git push</code>. Podemos, y a veces tenemos que ser más explícitos y usamos <code>git push origin master</code> donde <code>origin</code> se refiere al repositorio remoto (el de GitHub) y <code>master</code> a la rama local <code>master</code>. También podemos reemplazar <code>master</code> por otra rama, y si tenemos el repositorio remoto en GitHub eso nos dará la opción de abrir un <em>pull request</em> o PR.</p>
+</div>
+<div class="paragraph">
+<p>Pero si tenemos un repositorio local, que aún no está en un servidor, usamos <code>git remote add origin &lt;url&gt;</code> para enlazar nuestro repositorio local con un repositorio remoto. El nombre <code>origin</code> es una convención, pueden ponerle otro nombre, aunque no lo recomiendo. Cuando hacemos un <em>push</em> por primera vez, conviene usar la opción <code>-u</code> así <code>git push -u origin master</code> para decirle a Git que &#8220;trackee&#8221; el repositorio remoto y me diga si hay diferencias entre la versión local y la que está en Internet.</p>
+</div>
+<div class="paragraph">
+<p>Si estamos trabajando con más programadores, y suponemos que entre la última vez que clonamos el repositorio alguien más pudo hacer cambios en el servidor usamos <code>git pull</code> para traer los cambios de la rama <code>master</code> remota a la rama <code>master</code> local de nuestra computadora.</p>
+</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_github">GitHub</h3>
-
+<div class="paragraph">
+<p>GitHub es una plataforma online para subir repositorios de Git, trabajar colaborativamente con otros programadores y varias cosas más.</p>
+</div>
+<div class="paragraph">
+<p>No es el único lugar que provee <em>hosting</em> de repositorios de Git, pero sí el más utilizado. Para nosotros lo más importante de GitHub es lo que se conoce como <em>pull requests</em>. Las <em>pull requests</em> son solicitudes que un colaborador realiza a los otros colaboradores de un repositorio de fusionar una rama con código nuevo a <code>master</code>. Las <em>pull requests</em> permiten a los colaboradores discutir los cambios en una especie de foro o chat antes de realizar el <em>merge</em>.</p>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_ejercicios">Ejercicios</h2>
 <div class="sectionbody">
-
+<div class="paragraph">
+<p>Completar&#8230;&#8203;</p>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-05-20 12:37:23 -0300
+Last updated 2019-05-23 11:58:25 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
