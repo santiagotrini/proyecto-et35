@@ -28,6 +28,10 @@ title: Proyecto Informático I
 
 [html](javascript.html) - [pdf](pdf/javascript.pdf)
 
+### Actividad 2
+
+[html](javascript-2.html) - [pdf](pdf/javascript-2.pdf)
+
 ## Unidad 5 - Backend
 
 [html](unidad-5.html) - [pdf](pdf/unidad-5.pdf)
