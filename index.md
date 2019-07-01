@@ -28,6 +28,10 @@ title: Proyecto Informático I
 
 [html](javascript.html) - [pdf](pdf/javascript.pdf)
 
+#### Solución
+
+[js](solucion-js-1.js)
+
 ### Actividad 2
 
 [html](javascript-2.html) - [pdf](pdf/javascript-2.pdf)
