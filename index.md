@@ -6,6 +6,10 @@ title: Proyecto Informático I
 
 [html](programa.html) - [pdf](pdf/programa.pdf)
 
+# TP Vacaciones de invierno
+
+[html](tp-vacaciones.html) - [pdf](pdf/tp-vacaciones.pdf)
+
 # Apuntes
 
 ## Unidad 1 - Dirección de proyectos
