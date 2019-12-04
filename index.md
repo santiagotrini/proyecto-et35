@@ -32,7 +32,7 @@ title: Proyecto Informático I
 
 Implementar las siguientes funciones en JavaScript.
 
-1. Una función que devuelve un _array_ con los primeros _n_ números de Fibonacci. Sea _F_ la sucesión de Fibonacci, _F_<sub>0</sub> = 0 y _F_<sub>1</sub> = 1 se define _F_<sub>n</sub> = _F_<sub>n-1</sub> + _F_<sub>n-2</sub>. Es decir, a partir del tercer número, cada número es la suma de los dos anteriores. La cantidad de números _n_ es el único argumento de la función.
+- Una función que devuelve un _array_ con los primeros _n_ números de Fibonacci. Sea _F_ la sucesión de Fibonacci, _F_<sub>0</sub> = 0 y _F_<sub>1</sub> = 1 se define _F_<sub>n</sub> = _F_<sub>n-1</sub> + _F_<sub>n-2</sub>. Es decir, a partir del tercer número, cada número es la suma de los dos anteriores. La cantidad de números _n_ es el único argumento de la función.
 
 ```js
 function fibonacci(n) {
@@ -47,7 +47,7 @@ function fibonacci(n) {
 }
 ```
 
-2. Una función que recibe tres argumentos de tipo _string_ que son nombres de colores de una resistencia de cuatro bandas. Los argumentos son los dos primeros dígitos y el multiplicador. La función tiene que devolver el valor numérico en Ohms de la resistencia. Los colores en orden del 0 al 9 son: negro, marrón, rojo, naranja, amarillo, verde, azul, violeta, gris y blanco. No se puede usar `if ... else`.
+- Una función que recibe tres argumentos de tipo _string_ que son nombres de colores de una resistencia de cuatro bandas. Los argumentos son los dos primeros dígitos y el multiplicador. La función tiene que devolver el valor numérico en Ohms de la resistencia. Los colores en orden del 0 al 9 son: negro, marrón, rojo, naranja, amarillo, verde, azul, violeta, gris y blanco. No se puede usar `if ... else`.
 
 ```js
 function parseResistanceValue(first, second, multiplier) {
@@ -70,7 +70,7 @@ function parseResistanceValue(first, second, multiplier) {
 }
 ```
 
-3. Una función que reciba como argumento un año y devuelva verdadero si el año es bisiesto o falso en lo contrario. Un año es bisiesto si es divisible por 4 pero no por 100, al menos que sea divisible por 400.
+- Una función que reciba como argumento un año y devuelva verdadero si el año es bisiesto o falso en lo contrario. Un año es bisiesto si es divisible por 4 pero no por 100, al menos que sea divisible por 400.
 
 ```js
 function isLeap(year) {
@@ -87,7 +87,7 @@ function isLeap(year) {
 }
 ```
 
-4. Una función que use internamente el método `setInterval(callback, delay)` para mostrar por consola un reloj digital con horas, minutos y segundos.
+- Una función que use internamente el método `setInterval(callback, delay)` para mostrar por consola un reloj digital con horas, minutos y segundos.
 
 ```js
 function clock(h, m, s) {
